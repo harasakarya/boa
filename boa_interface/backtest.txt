@@ -1,0 +1,66 @@
+===========BACK TEST 2017-11-17==========
+
+The results for 500 days and 2 degrees are: BOA Final Balance: 11101.22 Hodl Final Balance: 11101.22 Boa Accuracy: 284 Hodl accuracy: 284 Elapsed time: 0:17:28
+The results for 500 days and 3 degrees are: BOA Final Balance: 20500.45 Hodl Final Balance: 11101.22 Boa Accuracy: 308 Hodl accuracy: 284 Elapsed time: 0:34:36
+The results for 500 days and 4 degrees are: BOA Final Balance: 29739.71 Hodl Final Balance: 11101.22 Boa Accuracy: 327 Hodl accuracy: 284 Elapsed time: 0:50:37
+The results for 500 days and 5 degrees are: BOA Final Balance: 19621.38 Hodl Final Balance: 11101.22 Boa Accuracy: 304 Hodl accuracy: 284 Elapsed time: 1:09:00
+The results for 500 days and 6 degrees are: BOA Final Balance: 17574.77 Hodl Final Balance: 11101.22 Boa Accuracy: 294 Hodl accuracy: 284 Elapsed time: 1:28:58
+The results for 500 days and 7 degrees are: BOA Final Balance: 13894.89 Hodl Final Balance: 11101.22 Boa Accuracy: 287 Hodl accuracy: 284 Elapsed time: 1:49:00
+The results for 500 days and 8 degrees are: BOA Final Balance: 8718.00 Hodl Final Balance: 11101.22 Boa Accuracy: 270 Hodl accuracy: 284 Elapsed time: 2:21:49
+The results for 500 days and 9 degrees are: BOA Final Balance: 7024.66 Hodl Final Balance: 11101.22 Boa Accuracy: 270 Hodl accuracy: 284 Elapsed time: 5:23:43
+The results for 1000 days and 2 degrees are: BOA Final Balance: 228753.71 Hodl Final Balance: 30481.13 Boa Accuracy: 665 Hodl accuracy: 546 Elapsed time: 0:30:57
+The results for 1000 days and 3 degrees are: BOA Final Balance: 419002.47 Hodl Final Balance: 30481.13 Boa Accuracy: 699 Hodl accuracy: 546 Elapsed time: 1:01:11
+The results for 1000 days and 4 degrees are: BOA Final Balance: 226081.73 Hodl Final Balance: 30481.13 Boa Accuracy: 670 Hodl accuracy: 546 Elapsed time: 1:31:23
+The results for 1000 days and 5 degrees are: BOA Final Balance: 39171.59 Hodl Final Balance: 30481.13 Boa Accuracy: 563 Hodl accuracy: 546 Elapsed time: 2:51:07
+The results for 1000 days and 6 degrees are: BOA Final Balance: 45200.57 Hodl Final Balance: 30481.13 Boa Accuracy: 563 Hodl accuracy: 546 Elapsed time: 3:15:39
+The results for 1000 days and 7 degrees are: BOA Final Balance: 23863.00 Hodl Final Balance: 30481.13 Boa Accuracy: 540 Hodl accuracy: 546 Elapsed time: 3:41:12
+The results for 1000 days and 8 degrees are: BOA Final Balance: 17378.61 Hodl Final Balance: 30481.13 Boa Accuracy: 521 Hodl accuracy: 546 Elapsed time: 4:25:57
+The results for 1000 days and 9 degrees are: BOA Final Balance: 16791.50 Hodl Final Balance: 30481.13 Boa Accuracy: 520 Hodl accuracy: 546 Elapsed time: 9:12:30
+
+===========BACK TEST 2017-11-18==========
+
+The Dash results for 500 days and 2 degrees are: BOA Final Balance: 60500.75 Hodl Final Balance: 60500.75 Boa Accuracy: 256 Hodl accuracy: 256 Elapsed time: 0:13:07
+The Dash results for 500 days and 3 degrees are: BOA Final Balance: 57276.48 Hodl Final Balance: 60500.75 Boa Accuracy: 251 Hodl accuracy: 256 Elapsed time: 0:26:30
+The Dash results for 500 days and 4 degrees are: BOA Final Balance: 43340.05 Hodl Final Balance: 60500.75 Boa Accuracy: 261 Hodl accuracy: 256 Elapsed time: 0:39:50
+The Monero results for 500 days and 2 degrees are: BOA Final Balance: 235553.22 Hodl Final Balance: 73135.27 Boa Accuracy: 270 Hodl accuracy: 248 Elapsed time: 0:13:33
+The Monero results for 500 days and 3 degrees are: BOA Final Balance: 635152.15 Hodl Final Balance: 73135.27 Boa Accuracy: 296 Hodl accuracy: 248 Elapsed time: 0:26:45
+The Monero results for 500 days and 4 degrees are: BOA Final Balance: 22610.28 Hodl Final Balance: 73135.27 Boa Accuracy: 265 Hodl accuracy: 248 Elapsed time: 0:42:17
+The Monero results for 300 days and 4 degrees are: BOA Final Balance: 41003.46 Hodl Final Balance: 10469.02 Boa Accuracy: 181 Hodl accuracy: 149 Elapsed time: 0:05:55
+The Monero results for 500 days and 4 degrees are: BOA Final Balance: 104902.76 Hodl Final Balance: 73135.27 Boa Accuracy: 286 Hodl accuracy: 248 Elapsed time: 0:10:20
+The Litecoin results for 500 days and 2 degrees are: BOA Final Balance: 7.74 Hodl Final Balance: 15378.00 Boa Accuracy: 72 Hodl accuracy: 235 Elapsed time: 0:20:32
+The Litecoin results for 500 days and 3 degrees are: BOA Final Balance: 1399.61 Hodl Final Balance: 15378.00 Boa Accuracy: 209 Hodl accuracy: 235 Elapsed time: 0:36:15
+The Litecoin results for 500 days and 4 degrees are: BOA Final Balance: 867.19 Hodl Final Balance: 15378.00 Boa Accuracy: 233 Hodl accuracy: 235 Elapsed time: 0:56:37
+The Litecoin results for 500 days and 2 degrees are: BOA Final Balance: 2993.27 Hodl Final Balance: 15378.00 Boa Accuracy: 244 Hodl accuracy: 235 Elapsed time: 0:31:02
+The Litecoin results for 500 days and 3 degrees are: BOA Final Balance: 11511.48 Hodl Final Balance: 15378.00 Boa Accuracy: 274 Hodl accuracy: 235 Elapsed time: 0:42:44
+The Litecoin results for 500 days and 4 degrees are: BOA Final Balance: 1396.03 Hodl Final Balance: 15378.00 Boa Accuracy: 230 Hodl accuracy: 235 Elapsed time: 0:53:40
+The Litecoin results for 200 days and 2 degrees are: BOA Final Balance: 3365.45 Hodl Final Balance: 4269.65 Boa Accuracy: 90 Hodl accuracy: 97 Elapsed time: 0:04:15
+
+===========BACK TEST 2017-11-24==========
+
+The eth results for 300 days and 2 degrees are: BOA Final Balance: 67359.42 Hodl Final Balance: 67359.42 Boa Accuracy: 158 Hodl accuracy: 158 Elapsed time: 0:06:02
+The eth results for 300 days and 3 degrees are: BOA Final Balance: 67359.42 Hodl Final Balance: 67359.42 Boa Accuracy: 158 Hodl accuracy: 158 Elapsed time: 0:11:10
+The eth results for 300 days and 4 degrees are: BOA Final Balance: 215471.08 Hodl Final Balance: 67359.42 Boa Accuracy: 199 Hodl accuracy: 158 Elapsed time: 0:16:15
+The Bitcoin results for 300 days and 2 degrees are: BOA Final Balance: 26942.53 Hodl Final Balance: 26942.53 Boa Accuracy: 178 Hodl accuracy: 178 Elapsed time: 0:10:31
+The Bitcoin results for 300 days and 3 degrees are: BOA Final Balance: 30069.66 Hodl Final Balance: 26942.53 Boa Accuracy: 189 Hodl accuracy: 178 Elapsed time: 0:20:57
+The Bitcoin results for 300 days and 4 degrees are: BOA Final Balance: 44656.37 Hodl Final Balance: 26942.53 Boa Accuracy: 202 Hodl accuracy: 178 Elapsed time: 0:33:03
+The Bitcoin results for 300 days and 5 degrees are: BOA Final Balance: 36642.96 Hodl Final Balance: 26942.53 Boa Accuracy: 194 Hodl accuracy: 178 Elapsed time: 0:11:11
+
+=======BACK TEST RESULTS 2017-12-06=======
+
+The Litecoin results for 300 days and 4 degrees are: BOA Final Balance: 10474.98 Hodl Final Balance: 52932.18 Boa Accuracy: 135 Hodl accuracy: 155 Elapsed time: 0:07:02
+
+=======BACK TEST RESULTS 2017-12-06=======
+
+The Litecoin results for 300 days and 3 degrees are: BOA Final Balance: 212823.82 Hodl Final Balance: 52932.18 Boa Accuracy: 186 Hodl accuracy: 155 Elapsed time: 0:07:22
+
+=======BACK TEST RESULTS 2017-12-08=======
+
+The Litecoin results for 300 days and 3 degrees are: BOA Final Balance: 215083.00 Hodl Final Balance: 52611.84 Boa Accuracy: 186 Hodl accuracy: 155 Elapsed time: 0:07:02
+
+=======BACK TEST RESULTS 2017-12-20=======
+
+The Litecoin results for 2 days and 3 degrees are: BOA Final Balance: 1099.27 Hodl Final Balance: 1099.27 Boa Accuracy: 1 Hodl accuracy: 1 Elapsed time: 0:00:03
+
+=======BACK TEST RESULTS 2017-12-21=======
+
+The Litecoin results for 300 days and 3 degrees are: BOA Final Balance: 401229.80 Hodl Final Balance: 83916.94 Boa Accuracy: 179 Hodl accuracy: 150 Elapsed time: 0:11:35

@@ -1,0 +1,48 @@
+
+=======BACK TEST RESULTS 2017-12-07=======
+
+The Litecoin, Litecoin, Litecoin results for 300 days and 3 degrees are: BOA Final Balance: 3066.00 Random Final Balance: 2985.00 Hodl Final Balance: 3012.00 Boa Accuracy: 1 Random accuracy: 0 Elapsed time: 0:00:03
+
+=======BACK TEST RESULTS 2017-12-07=======
+
+The Litecoin, Bitcoin, Ethereum results for 300 days and 3 degrees are: BOA Final Balance: 253894.45 Random Final Balance: 207104.28 Hodl Final Balance: 180748.66 Boa Accuracy: 108 Random accuracy: 104 Elapsed time: 0:14:47
+
+=======BACK TEST RESULTS 2017-12-07=======
+
+The Litecoin, Bitcoin, Ethereum results for 300 days and 4 degrees are: BOA Final Balance: 2113991.77 Random Final Balance: 359786.73 Hodl Final Balance: 158222.31 Boa Accuracy: 131 Random accuracy: 107 Elapsed time: 0:25:13
+
+=======BACK TEST RESULTS 2017-12-20=======
+
+The Litecoin, Bitcoin, Ethereum results for 5 days and 4 degrees are: BOA Final Balance: 4184.17 Random Final Balance: 2887.17 Hodl Final Balance: 3515.79 Boa Accuracy: 2 Random accuracy: 0 Elapsed time: 0:00:25
+
+=======BACK TEST RESULTS 2017-12-20=======
+
+The Litecoin, Bitcoin, Ethereum results for 5 days and 4 degrees are: BOA Final Balance: 4184.17 Random Final Balance: 3221.86 Hodl Final Balance: 3515.79 Boa Accuracy: 2 Random accuracy: 1 Elapsed time: 0:00:25
+
+=======BACK TEST RESULTS 2017-12-20=======
+
+The Litecoin, Bitcoin, Ethereum results for 353 days and 4 degrees are: BOA Final Balance: 3105.00 Random Final Balance: 3123.00 Hodl Final Balance: 3101.00 Boa Accuracy: 0 Random accuracy: 1 Elapsed time: 0:00:03
+
+=======BACK TEST RESULTS 2017-12-20=======
+
+The Litecoin, Bitcoin, Ethereum results for 353 days and 4 degrees are: BOA Final Balance: 3176.41 Random Final Balance: 3201.07 Hodl Final Balance: 3182.70 Boa Accuracy: 0 Random accuracy: 1 Elapsed time: 0:00:09
+
+=======BACK TEST RESULTS 2017-12-20=======
+
+The Litecoin, Bitcoin, Ethereum results for 353 days and 4 degrees are: BOA Final Balance: 11445438.17 Random Final Balance: 437953.52 Hodl Final Balance: 495832.68 Boa Accuracy: 155 Random accuracy: 116 Elapsed time: 0:25:55
+
+=======BACK TEST RESULTS 2017-12-20=======
+
+The Litecoin, Bitcoin, Ethereum results for 10 days and 4 degrees are: BOA Final Balance: 6828.30 Random Final Balance: 4482.63 Hodl Final Balance: 5176.39 Boa Accuracy: 5 Random accuracy: 1 Elapsed time: 0:00:51
+
+=======BACK TEST RESULTS 2017-12-20=======
+
+The Litecoin, Bitcoin, Ethereum results for 353 days and 4 degrees are: BOA Final Balance: 11445438.17 Random Final Balance: 390221.18 Hodl Final Balance: 495832.68 Boa Accuracy: 155 Random accuracy: 117 Elapsed time: 0:26:46
+
+=======BACK TEST RESULTS 2017-12-21=======
+
+The Litecoin, Monero, Ethereum results for 354 days and 4 degrees are: BOA Final Balance: 1387249.39 Random Final Balance: 406544.62 Hodl Final Balance: 519834.57 Boa Accuracy: 139 Random accuracy: 121 Elapsed time: 0:26:24
+
+=======BACK TEST RESULTS 2017-12-21=======
+
+The Litecoin, Bitcoin, Ethereum results for 354 days and 4 degrees are: BOA Final Balance: 20762645.59 Random Final Balance: 1230854.09 Hodl Final Balance: 638279.15 Boa Accuracy: 155 Random accuracy: 126 Elapsed time: 0:26:29
