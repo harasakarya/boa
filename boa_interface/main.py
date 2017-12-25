@@ -34,13 +34,16 @@ def main():
     coin = crypto_object.CryptoObject("Bitcoin", btc_series[700:], 4)
     coin2 = crypto_object.CryptoObject("Ethereum", eth_series, 4)
     coin3 = crypto_object.CryptoObject("Litecoin", ltc_series[700:], 3)
-    # coin4 = crypto_object.CryptoObject("Bitcoin Cash", bch_series, 3)
-    coins = [coin, coin2, coin3, ]#coin4]
-
+    coin4 = crypto_object.CryptoObject("Bitcoin Cash", bch_series, 3)
+    coins = [coin, coin2, coin3, coin4]
     # find_non_stationary(coin, ltc_series)
 
+    print(eth_series)
+
     # html_report(coins, now)
-    print(text_message_report(coins, now))
+    email_report(coins,now)
+    # text_message_report(quick_report(coins,now))
+    print(quick_report(coins,now))
     # text_report(coins, now)
     # exit_tester(candle_eth)
 
@@ -71,19 +74,23 @@ def exit_tester(candle_ltc):
 
     print(count, (pandas.Series.mean(series2[:i]) + pandas.Series.std(series2[:i]) * 3))
 
-def text_message_report(coins, now):
-    result = "BOA Report "+ now.strftime("%Y-%m-%d %H:%M") + "\n\n"
+def quick_report(coins, now):
+    result = "BOA Report " + now.strftime("%Y-%m-%d %H:%M") + "\n\n"
 
     for coin in coins:
-        result += coin.get_name() + ": " + coin.get_stationarity_as_string() +" and " + coin.get_independence_as_string() + "." + \
-              html.unescape(coin.get_most_recent_pattern()) + " " +\
-              '%.2f' % coin.get_odds_of_increase(coin.get_most_recent_pattern()) + \
-              "% chance of up. " + '%.2f' % coin.get_odds_of_decrease(coin.get_most_recent_pattern()) +\
-              "% chance of down.\n Up move: " +\
-              '%.2f' % coin.get_magnitude_of_increase(coin.get_most_recent_pattern()) +\
-              ". Down move: " +\
-              '%.2f' % coin.get_magnitude_of_decrease(coin.get_most_recent_pattern())+ \
-              ".\n Today, " + coin.get_prediction_plus(coin.get_most_recent_pattern()) + ".\n"
+        result += coin.get_name() + ": " + coin.get_stationarity_as_string() + " and " + coin.get_independence_as_string() + "." + \
+                  html.unescape(coin.get_most_recent_pattern()) + " " + \
+                  '%.2f' % coin.get_odds_of_increase(coin.get_most_recent_pattern()) + \
+                  "% chance of up. " + '%.2f' % coin.get_odds_of_decrease(coin.get_most_recent_pattern()) + \
+                  "% chance of down.\n Up move: " + \
+                  '%.2f' % coin.get_magnitude_of_increase(coin.get_most_recent_pattern()) + \
+                  ". Down move: " + \
+                  '%.2f' % coin.get_magnitude_of_decrease(coin.get_most_recent_pattern()) + \
+                  ".\n Today, " + coin.get_prediction_plus(coin.get_most_recent_pattern()) + ".\n"
+
+    return result
+
+def text_message_report(result):
 
     from twilio.rest import Client
 
@@ -98,12 +105,6 @@ def text_message_report(coins, now):
         to="+19106896305",
         from_="+19104461297",
         body=result)
-
-    print(message.sid)
-
-    email_report(coins,now)
-
-    return result
 
 def email_report(coins, now):
 
@@ -136,13 +137,14 @@ def email_report(coins, now):
                 '''
 
         for coin in coins:
+            tldr_val = coin.get_prediction_plus(coin.get_most_recent_pattern()) if coin.get_stationarity() else coin.get_stationarity_as_string()
             html += '''
                     
                             <br/>
                             <h2> ''' + coin.get_name() + '''</h2>
   
                                     <h3>
-                                    <b> TL;DR: ''' + coin.get_prediction_plus(coin.get_most_recent_pattern()) + '''</b>
+                                    <b> TL;DR: ''' + tldr_val + '''</b>
                                     </h3>
 
                             <p> Here's the rundown on <b>''' + coin.get_name() + '''</b> today:
