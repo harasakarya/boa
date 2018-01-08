@@ -46,3 +46,21 @@ The Litecoin, Monero, Ethereum results for 354 days and 4 degrees are: BOA Final
 =======BACK TEST RESULTS 2017-12-21=======
 
 The Litecoin, Bitcoin, Ethereum results for 354 days and 4 degrees are: BOA Final Balance: 20762645.59 Random Final Balance: 1230854.09 Hodl Final Balance: 638279.15 Boa Accuracy: 155 Random accuracy: 126 Elapsed time: 0:26:29
+
+=======BACK TEST RESULTS 2018-01-06=======
+
+The Litecoin, Bitcoin, Ethereum results for 339 days and 4 degrees are: BOA Final Balance: 1405176.92 Random Final Balance: 430282.42 Hodl Final Balance: 630025.02 Boa Accuracy: 123 Random accuracy: 115 Elapsed time: 0:24:57
+
+2.24(0.966)5.60(1.063)1.41(1.069)1.15(0.971)2.56(1.013)2.33(1.018)1.43(1.019)1.63(1.123)0.44(1.229)BOA: 4697302.13BOA Classic: 371228.47Hodl: 1661948.40Random: 5757750.19ripple: stationary5.9614.07ethereum: stationary6.0314.07monero: stationary2.7014.07stellar: stationary4.7714.07nav-coin: stationary4.7314.07nem: stationary2.2514.07dash: stationary4.6714.07bitcoin: stationary9.9714.07litecoin: stationary9.2114.07
+
+=======BACK TEST RESULTS 2018-01-07=======
+
+The results for a portfolio containing ['ripple', 'ethereum', 'monero', 'stellar', 'nav-coin', 'nem', 'dash', 'bitcoin', 'litecoin'] with degrees [5, 4, 3, 6, 6, 4, 5, 4, 6] are BOA Final Balance: 11777.08 Random Final Balance: 11551.04 Hodl Final Balance: 10765.80 Boa Accuracy: 0 Random accuracy: 1 Elapsed time: 0:00:31
+
+=======BACK TEST RESULTS 2018-01-07=======
+
+The results for a portfolio containing ['ripple', 'ethereum', 'monero', 'stellar', 'nav-coin', 'nem', 'dash', 'bitcoin', 'litecoin'] with degrees [5, 4, 3, 6, 6, 4, 5, 4, 6] are BOA Final Balance: 1045270.76 Random Final Balance: 1255516.36 Hodl Final Balance: 1731636.30 Boa Accuracy: 49 Random accuracy: 50 Elapsed time: 1:29:38
+
+=======BACK TEST RESULTS 2018-01-07=======
+
+The results for a portfolio containing ['ripple', 'ethereum', 'monero', 'stellar', 'nav-coin', 'nem', 'dash', 'bitcoin', 'litecoin'] with degrees [4, 4, 4, 4, 4, 4, 4, 4, 4] are BOA Final Balance: 5126577.22 Random Final Balance: 250285.35 Hodl Final Balance: 1729668.92 Boa Accuracy: 55 Random accuracy: 43 Elapsed time: 1:30:51

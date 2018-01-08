@@ -1,31 +1,29 @@
 import urllib.request
 from bs4 import BeautifulSoup
 import re
+from datetime import datetime as dt
+import pandas
 
 class Scraper():
-    def __init__(self):
-        self.btc_page = urllib.request.urlopen('https://coinmarketcap.com/currencies/bitcoin/historical-data/')
-        self.eth_page = urllib.request.urlopen('https://coinmarketcap.com/currencies/ethereum/historical-data/')
-        self.ltc_page = urllib.request.urlopen('https://coinmarketcap.com/currencies/litecoin/historical-data/')
-        self.bch_page = urllib.request.urlopen('https://coinmarketcap.com/currencies/bitcoin-cash/historical-data/')
 
-        self.btc_soup = BeautifulSoup(self.btc_page, 'html.parser')
-        self.eth_soup = BeautifulSoup(self.eth_page, 'html.parser')
-        self.ltc_soup = BeautifulSoup(self.ltc_page, 'html.parser')
-        self.bch_soup = BeautifulSoup(self.bch_page, 'html.parser')
+    def get_current_price(self, name):
 
-    def get_bct_price(self):
-        btc_price = re.findall(r"[-+]?\d*\.\d+|\d+", self.btc_soup.find('span', attrs={'id':'quote_price'}).text)
-        return float(btc_price[0])
+        self.soup = BeautifulSoup(urllib.request.urlopen('https://coinmarketcap.com/currencies/' + name + '/historical-data/'), 'html.parser')
 
-    def get_eth_price(self):
-        eth_price = re.findall(r"[-+]?\d*\.\d+|\d+", self.eth_soup.find('span', attrs={'id':'quote_price'}).text)
-        return float(eth_price[0])
+        price =  re.findall(r"[-+]?\d*\.\d+|\d+", self.soup.find('span', attrs={'id':'quote_price'}).text)
+        return float(price[0])
 
-    def get_ltc_price(self):
-        ltc_price = re.findall(r"[-+]?\d*\.\d+|\d+", self.ltc_soup.find('span', attrs={'id':'quote_price'}).text)
-        return float(ltc_price[0])
+    def get_price_history(self, name):
 
-    def get_bch_price(self):
-        bch_price = re.findall(r"[-+]?\d*\.\d+|\d+", self.bch_soup.find('span', attrs={'id':'quote_price'}).text)
-        return float(bch_price[0])
+        self.soup = BeautifulSoup(urllib.request.urlopen('https://coinmarketcap.com/currencies/' + name + '/historical-data/?start=20130428&end=20180104'), 'html.parser')
+
+        series = pandas.Series()
+
+        for row in reversed(self.soup.findAll('table')[0].tbody.findAll('tr')):
+            series = series.append(pandas.Series([float(row.findAll('td')[4].contents[0])], [dt.strptime(row.findAll('td')[0].contents[0], "%b %d, %Y").strftime("%Y-%m-%d")]))
+
+        if dt.now().strftime("%Y-%m-%d") not in series:
+            series = series.append(
+                pandas.Series([self.get_current_price(name)], [dt.now().strftime("%Y-%m-%d")]))
+
+        return(series)

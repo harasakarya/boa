@@ -6,7 +6,6 @@ from datetime import datetime as dt
 from matplotlib import pyplot
 
 
-
 def main():
     stat_object = statistics.Calculate_Stats()
     now = datetime.datetime.now()
@@ -15,37 +14,20 @@ def main():
     candle_eth = candlesticks.CandleSticks("ETH-USD")
     candle_ltc = candlesticks.CandleSticks("LTC-USD")
 
-    try:
-        # btc_series = http://api.bitcoincharts.com/v1/csv/coinbaseUSD.csv.gz
-        btc_series = stat_object.helper.parse_csv('https://coinmetrics.io/data/btc.csv')
-        eth_series = stat_object.helper.parse_csv("https://coinmetrics.io/data/eth.csv")
-        dash_series = stat_object.helper.parse_csv("https://coinmetrics.io/data/dash.csv")
-        xmr_series = stat_object.helper.parse_csv("https://coinmetrics.io/data/xmr.csv")
-        ltc_series = stat_object.helper.parse_csv("https://coinmetrics.io/data/ltc.csv")
-        bch_series = stat_object.helper.parse_csv("https://coinmetrics.io/data/bch.csv")
-    except:
-        btc_series = stat_object.helper.parse_csv('btc.csv')
+    coin_names = [
+        #"ripple", "ethereum", "monero","stellar","nav-coin","nem","dash",
+        "bitcoin","litecoin","ethereum","bitcoin-cash"
+    ]
 
-    btc_series = btc_series.append(pandas.Series([scrape_obj.get_bct_price()],[now.strftime("%Y-%m-%d")]))
-    eth_series = eth_series.append(pandas.Series([scrape_obj.get_eth_price()], [now.strftime("%Y-%m-%d")]))
-    ltc_series = ltc_series.append(pandas.Series([scrape_obj.get_ltc_price()], [now.strftime("%Y-%m-%d")]))
-    bch_series = bch_series.append(pandas.Series([scrape_obj.get_bch_price()], [now.strftime("%Y-%m-%d")]))
+    coins = []
+    for coin in coin_names:
+        coins.append(crypto_object.CryptoObject(coin,
+                                      scrape_obj.get_price_history(coin), 4))
 
-    coin = crypto_object.CryptoObject("Bitcoin", btc_series[700:], 4)
-    coin2 = crypto_object.CryptoObject("Ethereum", eth_series, 4)
-    coin3 = crypto_object.CryptoObject("Litecoin", ltc_series[700:], 3)
-    coin4 = crypto_object.CryptoObject("Bitcoin Cash", bch_series, 3)
-    coins = [coin, coin2, coin3, coin4]
-    # find_non_stationary(coin, ltc_series)
 
-    print(eth_series)
-
-    # html_report(coins, now)
-    email_report(coins,now)
+    OFFICIAL_BOA(coins,now)
     # text_message_report(quick_report(coins,now))
-    print(quick_report(coins,now))
-    # text_report(coins, now)
-    # exit_tester(candle_eth)
+    print(quick_report(coins, now))
 
 
 def exit_tester(candle_ltc):
@@ -74,6 +56,7 @@ def exit_tester(candle_ltc):
 
     print(count, (pandas.Series.mean(series2[:i]) + pandas.Series.std(series2[:i]) * 3))
 
+
 def quick_report(coins, now):
     result = "BOA Report " + now.strftime("%Y-%m-%d %H:%M") + "\n\n"
 
@@ -90,8 +73,8 @@ def quick_report(coins, now):
 
     return result
 
-def text_message_report(result):
 
+def text_message_report(result):
     from twilio.rest import Client
 
     # Your Account SID from twilio.com/console
@@ -106,17 +89,21 @@ def text_message_report(result):
         from_="+19104461297",
         body=result)
 
-def email_report(coins, now):
 
+def OFFICIAL_BOA(coins, now):
     import smtplib
     from email.mime.multipart import MIMEMultipart
     from email.mime.text import MIMEText
-    s = smtplib.SMTP(host='mail.privateemail.com', port=587)
+    s = smtplib.SMTP(host='smtp.privateemail.com', port=587)
     s.starttls()
     s.login("admin@cryptoboa.io", "Aesthetics21!P")
 
     me = "admin@cryptoboa.io"
-    you = ["officialemre@gmail.com"]
+    you = ["officialemre@gmail.com", "cryptoboa@exode.com", "lechalex1@gmail.com",
+           "bhomsi@gmail.com", "bskb04@gmail.com", "redguitarfreak88@gmail.com",
+           "zotthewizard@gmail.com", "dnhvcrpt@gmail.com", "tartrate@gmail.com", "nicastrh@gmail.com",
+            "jonathanng222@gmail.com", "alexswenews@gmail.com", "dvddvdsn777@gmail.com", "akoruth95@gmail.com",
+           "miroslavstricevic@gmail.com","sixohofficial@gmail.com"]
 
     for name in you:
         # Create message container - the correct MIME type is multipart/alternative.
@@ -137,7 +124,8 @@ def email_report(coins, now):
                 '''
 
         for coin in coins:
-            tldr_val = coin.get_prediction_plus(coin.get_most_recent_pattern()) if coin.get_stationarity() else coin.get_stationarity_as_string()
+            tldr_val = coin.get_prediction_plus(
+                coin.get_most_recent_pattern()) if coin.get_stationarity() else coin.get_stationarity_as_string()
             html += '''
                     
                             <br/>
@@ -185,11 +173,17 @@ def email_report(coins, now):
                                 <br/>   
                 '''
 
-        html += " See you tomorrow!  "
+        html += " <p> See you tomorrow!  <br/><br/> Disclaimer: The information provided here and in accompanying material " \
+                "is for informational purposes only.  It should not be considered legal or financial advice.  " \
+                "You should consult with an attorney or other professional to determine what may be best for your individual needs. " \
+                "\n\n I do not make any guarantee or other promise as to any results that may be obtained from using this content. " \
+                "No one should make any investment decision without first consulting his or her own financial advisor and conducting " \
+                "his or her own research and due diligence.</p>"
         msg.attach(MIMEText(html, 'html'))
 
-        s.sendmail(me, you, msg.as_string())
-        s.quit()
+        s.sendmail(me, name, msg.as_string())
+    s.quit()
+
 
 def text_report(coins, now):
     print("BOA Report ", now.strftime("%Y-%m-%d %H:%M"))
@@ -209,7 +203,7 @@ def text_report(coins, now):
               "which means the possible patterns at midnight and their outcomes are:\n",
               html.unescape(coin.as_arrows(coin.get_predictive_pattern() + "1")), "up:",
               '%.2f' % coin.get_odds_of_increase(coin.get_predictive_pattern() + "1"), "x",
-              '%.2f' % coin.get_magnitude_of_increase(coin.get_predictive_pattern() + "1"),"down:",
+              '%.2f' % coin.get_magnitude_of_increase(coin.get_predictive_pattern() + "1"), "down:",
               '%.2f' % coin.get_odds_of_decrease(coin.get_predictive_pattern() + "1"), "x",
               '%.2f' % coin.get_magnitude_of_decrease(coin.get_predictive_pattern() + "1"),
               coin.get_prediction_plus(coin.get_predictive_pattern() + "1"), "\n",
@@ -228,7 +222,7 @@ def text_report(coins, now):
               '%.2f' % coin.get_magnitude_of_increase(coin.get_most_recent_pattern()),
               "and the average magnitude of the down move is",
               '%.2f' % coin.get_magnitude_of_decrease(coin.get_most_recent_pattern()),
-              ".\n Today, you should", coin.get_prediction_plus(coin.get_most_recent_pattern()),".\n",
+              ".\n Today, you should", coin.get_prediction_plus(coin.get_most_recent_pattern()), ".\n",
 
               )
 
@@ -259,7 +253,8 @@ def html_report(coins, now):
                         <br/>
                             Price change has been <b>''' + coin.get_randomness_as_string() + '''</b>ly distributed, with a Chi-Square sigma of 
                             <b>''' + coin.get_rand_sigma() + '''</b> and a Chi-Square critical value of <b>''' + coin.get_rand_critical_value() + '''</b>. That means that 
-                            <b>''' + coin.get_name() + '''</b> price  <b>''' + coin.get_likelihood(coin.get_randomness()) + '''</b> selected from the
+                            <b>''' + coin.get_name() + '''</b> price  <b>''' + coin.get_likelihood(
+            coin.get_randomness()) + '''</b> selected from the
                             probability distribution. 
                         <br/>
                         <br/>
@@ -289,10 +284,15 @@ def html_report(coins, now):
                         </table>
                         <br/>
                         <br/>
-                        Since the most recent sequence of price change was <b>''' + coin.as_arrows(coin.get_most_recent_pattern()) + '''</b>, there is a <b>''' + '%.2f' % coin.get_odds_of_increase(coin.get_most_recent_pattern()) + '''%</b>
-                        chance price will go up, and a <b>''' + '%.2f' % coin.get_odds_of_decrease(coin.get_most_recent_pattern()) + '''%</b>
-                        chance price will go down. The average magnitude of the up move is <b>''' + '%.2f' % coin.get_magnitude_of_increase(coin.get_most_recent_pattern()) + '''%</b>
-                        and the average magnitude of the down move is <b>''' + '%.2f' % coin.get_magnitude_of_decrease(coin.get_most_recent_pattern()) + '''%</b>.
+                        Since the most recent sequence of price change was <b>''' + coin.as_arrows(
+            coin.get_most_recent_pattern()) + '''</b>, there is a <b>''' + '%.2f' % coin.get_odds_of_increase(
+            coin.get_most_recent_pattern()) + '''%</b>
+                        chance price will go up, and a <b>''' + '%.2f' % coin.get_odds_of_decrease(
+            coin.get_most_recent_pattern()) + '''%</b>
+                        chance price will go down. The average magnitude of the up move is <b>''' + '%.2f' % coin.get_magnitude_of_increase(
+            coin.get_most_recent_pattern()) + '''%</b>
+                        and the average magnitude of the down move is <b>''' + '%.2f' % coin.get_magnitude_of_decrease(
+            coin.get_most_recent_pattern()) + '''%</b>.
                         Today, you should <b>''' + coin.get_prediction_plus(coin.get_most_recent_pattern()) + '''</b>.
                         <br/>
                         <br/>
@@ -301,8 +301,8 @@ def html_report(coins, now):
         f = open(coin.get_name() + '-report-' + now.strftime("%Y-%m-%d") + '.html', 'w+')
         f.write(html_string)
         f.close()
-    # import pdfkit
-    # pdfkit.from_url('report-'+now.strftime("%Y-%m-%d")+'.html', 'report-'+now.strftime("%Y-%m-%d")+'.pdf')
+        # import pdfkit
+        # pdfkit.from_url('report-'+now.strftime("%Y-%m-%d")+'.html', 'report-'+now.strftime("%Y-%m-%d")+'.pdf')
 
 
 def find_non_stationary(coin, ltc_series):

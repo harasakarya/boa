@@ -63,7 +63,7 @@ class Calculate_Stats:
         degrees_of_freedom = (len(observed_values)-1)
         probability = .05
         critical_value = chi2.isf(probability,degrees_of_freedom)
-        return critical_value, sigma;
+        return critical_value, sigma
 
     def calculate_randomness(self, series):
         even_half, odd_half = self.helper.divide_even_and_odd(series)
@@ -80,13 +80,3 @@ class Calculate_Stats:
         critical_value, sigma = self.calculate_chi_squared(first_deciles,second_deciles)
 
         return (critical_value > sigma), sigma, critical_value;
-
-    def calculate_trend_through_regression(self, series, degree):
-
-        index = []
-        for i in range(0,series.size):
-            index.append(i)
-        coefs = poly.polyfit(index, series.values, degree)
-        print(coefs)
-
-        return poly.polyval(index, coefs)

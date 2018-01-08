@@ -1,66 +1,63 @@
-===========BACK TEST 2017-11-17==========
+=======BACK TEST RESULTS 2018-01-05=======
 
-The results for 500 days and 2 degrees are: BOA Final Balance: 11101.22 Hodl Final Balance: 11101.22 Boa Accuracy: 284 Hodl accuracy: 284 Elapsed time: 0:17:28
-The results for 500 days and 3 degrees are: BOA Final Balance: 20500.45 Hodl Final Balance: 11101.22 Boa Accuracy: 308 Hodl accuracy: 284 Elapsed time: 0:34:36
-The results for 500 days and 4 degrees are: BOA Final Balance: 29739.71 Hodl Final Balance: 11101.22 Boa Accuracy: 327 Hodl accuracy: 284 Elapsed time: 0:50:37
-The results for 500 days and 5 degrees are: BOA Final Balance: 19621.38 Hodl Final Balance: 11101.22 Boa Accuracy: 304 Hodl accuracy: 284 Elapsed time: 1:09:00
-The results for 500 days and 6 degrees are: BOA Final Balance: 17574.77 Hodl Final Balance: 11101.22 Boa Accuracy: 294 Hodl accuracy: 284 Elapsed time: 1:28:58
-The results for 500 days and 7 degrees are: BOA Final Balance: 13894.89 Hodl Final Balance: 11101.22 Boa Accuracy: 287 Hodl accuracy: 284 Elapsed time: 1:49:00
-The results for 500 days and 8 degrees are: BOA Final Balance: 8718.00 Hodl Final Balance: 11101.22 Boa Accuracy: 270 Hodl accuracy: 284 Elapsed time: 2:21:49
-The results for 500 days and 9 degrees are: BOA Final Balance: 7024.66 Hodl Final Balance: 11101.22 Boa Accuracy: 270 Hodl accuracy: 284 Elapsed time: 5:23:43
-The results for 1000 days and 2 degrees are: BOA Final Balance: 228753.71 Hodl Final Balance: 30481.13 Boa Accuracy: 665 Hodl accuracy: 546 Elapsed time: 0:30:57
-The results for 1000 days and 3 degrees are: BOA Final Balance: 419002.47 Hodl Final Balance: 30481.13 Boa Accuracy: 699 Hodl accuracy: 546 Elapsed time: 1:01:11
-The results for 1000 days and 4 degrees are: BOA Final Balance: 226081.73 Hodl Final Balance: 30481.13 Boa Accuracy: 670 Hodl accuracy: 546 Elapsed time: 1:31:23
-The results for 1000 days and 5 degrees are: BOA Final Balance: 39171.59 Hodl Final Balance: 30481.13 Boa Accuracy: 563 Hodl accuracy: 546 Elapsed time: 2:51:07
-The results for 1000 days and 6 degrees are: BOA Final Balance: 45200.57 Hodl Final Balance: 30481.13 Boa Accuracy: 563 Hodl accuracy: 546 Elapsed time: 3:15:39
-The results for 1000 days and 7 degrees are: BOA Final Balance: 23863.00 Hodl Final Balance: 30481.13 Boa Accuracy: 540 Hodl accuracy: 546 Elapsed time: 3:41:12
-The results for 1000 days and 8 degrees are: BOA Final Balance: 17378.61 Hodl Final Balance: 30481.13 Boa Accuracy: 521 Hodl accuracy: 546 Elapsed time: 4:25:57
-The results for 1000 days and 9 degrees are: BOA Final Balance: 16791.50 Hodl Final Balance: 30481.13 Boa Accuracy: 520 Hodl accuracy: 546 Elapsed time: 9:12:30
+The ripple results for 300 days and 3 degrees are: BOA Final Balance: 1567939.33INV BOA: 30846.99Likeli: 354725.65Inv Likeli: 136348.22 Hodl Final Balance: 4836621.29 Boa Accuracy: 141 inv boa accuracy 155 likeli accuracy 154 inv likeli accuracy 142 Hodl accuracy: 154|| Series Size 1616 Elapsed time: 0:08:22
+The ripple results for 300 days and 4 degrees are: BOA Final Balance: 1604343.69INV BOA: 30147.04Likeli: 216204.47Inv Likeli: 223705.89 Hodl Final Balance: 4836621.29 Boa Accuracy: 149 inv boa accuracy 147 likeli accuracy 154 inv likeli accuracy 142 Hodl accuracy: 154|| Series Size 1616 Elapsed time: 0:17:10
+The ripple results for 300 days and 5 degrees are: BOA Final Balance: 2089220.71INV BOA: 23150.36Likeli: 637311.03Inv Likeli: 75891.07 Hodl Final Balance: 4836621.29 Boa Accuracy: 146 inv boa accuracy 150 likeli accuracy 154 inv likeli accuracy 142 Hodl accuracy: 154|| Series Size 1616 Elapsed time: 0:25:45
+The ripple results for 300 days and 6 degrees are: BOA Final Balance: 132823.99INV BOA: 364137.63Likeli: 56350.20Inv Likeli: 858314.83 Hodl Final Balance: 4836621.29 Boa Accuracy: 144 inv boa accuracy 152 likeli accuracy 154 inv likeli accuracy 142 Hodl accuracy: 154|| Series Size 1616 Elapsed time: 0:35:15
+The ripple results for 300 days and 7 degrees are: BOA Final Balance: 49763.16INV BOA: 971928.17Likeli: 99457.20Inv Likeli: 486301.79 Hodl Final Balance: 4836621.29 Boa Accuracy: 137 inv boa accuracy 159 likeli accuracy 154 inv likeli accuracy 142 Hodl accuracy: 154|| Series Size 1616 Elapsed time: 0:45:53
 
-===========BACK TEST 2017-11-18==========
+The ethereum results for 150 days and 2 degrees are: BOA Final Balance: 34042.68INV BOA: 10000.00Likeli: 8244.37Inv Likeli: 41292.04 Hodl Final Balance: 34042.68 Boa Accuracy: 82 inv boa accuracy 65 likeli accuracy 82 inv likeli accuracy 65 Hodl accuracy: 82|| Series Size 883 Elapsed time: 0:03:03
+The ethereum results for 150 days and 3 degrees are: BOA Final Balance: 38528.47INV BOA: 8835.72Likeli: 10950.55Inv Likeli: 31087.65 Hodl Final Balance: 34042.68 Boa Accuracy: 81 inv boa accuracy 66 likeli accuracy 82 inv likeli accuracy 65 Hodl accuracy: 82|| Series Size 883 Elapsed time: 0:06:11
+--The ethereum results for 150 days and 4 degrees are: BOA Final Balance: 46550.76INV BOA: 7313.02Likeli: 30675.76Inv Likeli: 11097.58 Hodl Final Balance: 34042.68 Boa Accuracy: 77 inv boa accuracy 70 likeli accuracy 82 inv likeli accuracy 65 Hodl accuracy: 82|| Series Size 883 Elapsed time: 0:09:20
+The ethereum results for 150 days and 5 degrees are: BOA Final Balance: 38213.56INV BOA: 8908.53Likeli: 34366.82Inv Likeli: 9905.68 Hodl Final Balance: 34042.68 Boa Accuracy: 78 inv boa accuracy 69 likeli accuracy 82 inv likeli accuracy 65 Hodl accuracy: 82|| Series Size 883 Elapsed time: 0:12:29
+The ethereum results for 150 days and 6 degrees are: BOA Final Balance: 24009.00INV BOA: 14179.13Likeli: 23511.86Inv Likeli: 14478.94 Hodl Final Balance: 34042.68 Boa Accuracy: 75 inv boa accuracy 72 likeli accuracy 82 inv likeli accuracy 65 Hodl accuracy: 82|| Series Size 883 Elapsed time: 0:15:40
+The ethereum results for 150 days and 7 degrees are: BOA Final Balance: 18197.85INV BOA: 18706.97Likeli: 13790.22Inv Likeli: 24686.11 Hodl Final Balance: 34042.68 Boa Accuracy: 65 inv boa accuracy 82 likeli accuracy 82 inv likeli accuracy 65 Hodl accuracy: 82|| Series Size 883 Elapsed time: 0:19:09
 
-The Dash results for 500 days and 2 degrees are: BOA Final Balance: 60500.75 Hodl Final Balance: 60500.75 Boa Accuracy: 256 Hodl accuracy: 256 Elapsed time: 0:13:07
-The Dash results for 500 days and 3 degrees are: BOA Final Balance: 57276.48 Hodl Final Balance: 60500.75 Boa Accuracy: 251 Hodl accuracy: 256 Elapsed time: 0:26:30
-The Dash results for 500 days and 4 degrees are: BOA Final Balance: 43340.05 Hodl Final Balance: 60500.75 Boa Accuracy: 261 Hodl accuracy: 256 Elapsed time: 0:39:50
-The Monero results for 500 days and 2 degrees are: BOA Final Balance: 235553.22 Hodl Final Balance: 73135.27 Boa Accuracy: 270 Hodl accuracy: 248 Elapsed time: 0:13:33
-The Monero results for 500 days and 3 degrees are: BOA Final Balance: 635152.15 Hodl Final Balance: 73135.27 Boa Accuracy: 296 Hodl accuracy: 248 Elapsed time: 0:26:45
-The Monero results for 500 days and 4 degrees are: BOA Final Balance: 22610.28 Hodl Final Balance: 73135.27 Boa Accuracy: 265 Hodl accuracy: 248 Elapsed time: 0:42:17
-The Monero results for 300 days and 4 degrees are: BOA Final Balance: 41003.46 Hodl Final Balance: 10469.02 Boa Accuracy: 181 Hodl accuracy: 149 Elapsed time: 0:05:55
-The Monero results for 500 days and 4 degrees are: BOA Final Balance: 104902.76 Hodl Final Balance: 73135.27 Boa Accuracy: 286 Hodl accuracy: 248 Elapsed time: 0:10:20
-The Litecoin results for 500 days and 2 degrees are: BOA Final Balance: 7.74 Hodl Final Balance: 15378.00 Boa Accuracy: 72 Hodl accuracy: 235 Elapsed time: 0:20:32
-The Litecoin results for 500 days and 3 degrees are: BOA Final Balance: 1399.61 Hodl Final Balance: 15378.00 Boa Accuracy: 209 Hodl accuracy: 235 Elapsed time: 0:36:15
-The Litecoin results for 500 days and 4 degrees are: BOA Final Balance: 867.19 Hodl Final Balance: 15378.00 Boa Accuracy: 233 Hodl accuracy: 235 Elapsed time: 0:56:37
-The Litecoin results for 500 days and 2 degrees are: BOA Final Balance: 2993.27 Hodl Final Balance: 15378.00 Boa Accuracy: 244 Hodl accuracy: 235 Elapsed time: 0:31:02
-The Litecoin results for 500 days and 3 degrees are: BOA Final Balance: 11511.48 Hodl Final Balance: 15378.00 Boa Accuracy: 274 Hodl accuracy: 235 Elapsed time: 0:42:44
-The Litecoin results for 500 days and 4 degrees are: BOA Final Balance: 1396.03 Hodl Final Balance: 15378.00 Boa Accuracy: 230 Hodl accuracy: 235 Elapsed time: 0:53:40
-The Litecoin results for 200 days and 2 degrees are: BOA Final Balance: 3365.45 Hodl Final Balance: 4269.65 Boa Accuracy: 90 Hodl accuracy: 97 Elapsed time: 0:04:15
+The monero results for 150 days and 2 degrees are: BOA Final Balance: 74714.00INV BOA: 10000.00Likeli: 62890.48Inv Likeli: 11880.02 Hodl Final Balance: 74714.00 Boa Accuracy: 71 inv boa accuracy 78 likeli accuracy 71 inv likeli accuracy 78 Hodl accuracy: 71|| Series Size 1325 Elapsed time: 0:05:33
+The monero results for 150 days and 3 degrees are: BOA Final Balance: 58562.39INV BOA: 12758.02Likeli: 35678.75Inv Likeli: 20940.76 Hodl Final Balance: 74714.00 Boa Accuracy: 69 inv boa accuracy 80 likeli accuracy 71 inv likeli accuracy 78 Hodl accuracy: 71|| Series Size 1325 Elapsed time: 0:10:57
+The monero results for 150 days and 4 degrees are: BOA Final Balance: 31369.61INV BOA: 23817.32Likeli: 54903.64Inv Likeli: 13608.20 Hodl Final Balance: 74714.00 Boa Accuracy: 67 inv boa accuracy 82 likeli accuracy 71 inv likeli accuracy 78 Hodl accuracy: 71|| Series Size 1325 Elapsed time: 0:16:34
+The monero results for 150 days and 5 degrees are: BOA Final Balance: 18512.54INV BOA: 40358.58Likeli: 43106.05Inv Likeli: 17332.60 Hodl Final Balance: 74714.00 Boa Accuracy: 68 inv boa accuracy 81 likeli accuracy 71 inv likeli accuracy 78 Hodl accuracy: 71|| Series Size 1325 Elapsed time: 0:22:09
+The monero results for 150 days and 6 degrees are: BOA Final Balance: 27533.11INV BOA: 27136.05Likeli: 58558.33Inv Likeli: 12758.90 Hodl Final Balance: 74714.00 Boa Accuracy: 71 inv boa accuracy 78 likeli accuracy 71 inv likeli accuracy 78 Hodl accuracy: 71|| Series Size 1325 Elapsed time: 0:27:44
+The monero results for 150 days and 7 degrees are: BOA Final Balance: 50616.22INV BOA: 14760.88Likeli: 47317.43Inv Likeli: 15789.95 Hodl Final Balance: 74714.00 Boa Accuracy: 77 inv boa accuracy 72 likeli accuracy 71 inv likeli accuracy 78 Hodl accuracy: 71|| Series Size 1325 Elapsed time: 0:33:17
 
-===========BACK TEST 2017-11-24==========
+The stellar results for 150 days and 2 degrees are: BOA Final Balance: 31367.96INV BOA: 92716.05Likeli: 31367.96Inv Likeli: 92716.05 Hodl Final Balance: 290831.34 Boa Accuracy: 76 inv boa accuracy 71 likeli accuracy 76 inv likeli accuracy 71 Hodl accuracy: 76|| Series Size 1250 Elapsed time: 0:04:33
+The stellar results for 150 days and 3 degrees are: BOA Final Balance: 25300.92INV BOA: 114948.91Likeli: 31367.96Inv Likeli: 92716.05 Hodl Final Balance: 290831.34 Boa Accuracy: 73 inv boa accuracy 74 likeli accuracy 76 inv likeli accuracy 71 Hodl accuracy: 76|| Series Size 1250 Elapsed time: 0:09:09
+The stellar results for 150 days and 4 degrees are: BOA Final Balance: 59327.98INV BOA: 49020.94Likeli: 26167.65Inv Likeli: 111141.54 Hodl Final Balance: 290831.34 Boa Accuracy: 73 inv boa accuracy 74 likeli accuracy 76 inv likeli accuracy 71 Hodl accuracy: 76|| Series Size 1250 Elapsed time: 0:13:44
+The stellar results for 150 days and 5 degrees are: BOA Final Balance: 40553.95INV BOA: 71714.68Likeli: 23212.30Inv Likeli: 125291.92 Hodl Final Balance: 290831.34 Boa Accuracy: 70 inv boa accuracy 77 likeli accuracy 76 inv likeli accuracy 71 Hodl accuracy: 76|| Series Size 1250 Elapsed time: 0:18:19
+The stellar results for 150 days and 6 degrees are: BOA Final Balance: 82453.57INV BOA: 35272.13Likeli: 17326.89Inv Likeli: 167849.75 Hodl Final Balance: 290831.34 Boa Accuracy: 79 inv boa accuracy 68 likeli accuracy 76 inv likeli accuracy 71 Hodl accuracy: 76|| Series Size 1250 Elapsed time: 0:22:56
+The stellar results for 150 days and 7 degrees are: BOA Final Balance: 43797.83INV BOA: 66403.14Likeli: 25865.08Inv Likeli: 112441.67 Hodl Final Balance: 290831.34 Boa Accuracy: 76 inv boa accuracy 71 likeli accuracy 77 inv likeli accuracy 70 Hodl accuracy: 76|| Series Size 1250 Elapsed time: 0:27:49
 
-The eth results for 300 days and 2 degrees are: BOA Final Balance: 67359.42 Hodl Final Balance: 67359.42 Boa Accuracy: 158 Hodl accuracy: 158 Elapsed time: 0:06:02
-The eth results for 300 days and 3 degrees are: BOA Final Balance: 67359.42 Hodl Final Balance: 67359.42 Boa Accuracy: 158 Hodl accuracy: 158 Elapsed time: 0:11:10
-The eth results for 300 days and 4 degrees are: BOA Final Balance: 215471.08 Hodl Final Balance: 67359.42 Boa Accuracy: 199 Hodl accuracy: 158 Elapsed time: 0:16:15
-The Bitcoin results for 300 days and 2 degrees are: BOA Final Balance: 26942.53 Hodl Final Balance: 26942.53 Boa Accuracy: 178 Hodl accuracy: 178 Elapsed time: 0:10:31
-The Bitcoin results for 300 days and 3 degrees are: BOA Final Balance: 30069.66 Hodl Final Balance: 26942.53 Boa Accuracy: 189 Hodl accuracy: 178 Elapsed time: 0:20:57
-The Bitcoin results for 300 days and 4 degrees are: BOA Final Balance: 44656.37 Hodl Final Balance: 26942.53 Boa Accuracy: 202 Hodl accuracy: 178 Elapsed time: 0:33:03
-The Bitcoin results for 300 days and 5 degrees are: BOA Final Balance: 36642.96 Hodl Final Balance: 26942.53 Boa Accuracy: 194 Hodl accuracy: 178 Elapsed time: 0:11:11
+The nav-coin results for 150 days and 2 degrees are: BOA Final Balance: 13562.61INV BOA: 90255.67Likeli: 13562.61Inv Likeli: 90255.67 Hodl Final Balance: 122410.23 Boa Accuracy: 76 inv boa accuracy 70 likeli accuracy 76 inv likeli accuracy 70 Hodl accuracy: 76|| Series Size 1304 Elapsed time: 0:03:35
+The nav-coin results for 150 days and 3 degrees are: BOA Final Balance: 12604.75INV BOA: 97114.40Likeli: 13562.61Inv Likeli: 90255.67 Hodl Final Balance: 122410.23 Boa Accuracy: 73 inv boa accuracy 73 likeli accuracy 76 inv likeli accuracy 70 Hodl accuracy: 76|| Series Size 1304 Elapsed time: 0:07:12
+The nav-coin results for 150 days and 4 degrees are: BOA Final Balance: 15582.96INV BOA: 78553.90Likeli: 13562.61Inv Likeli: 90255.67 Hodl Final Balance: 122410.23 Boa Accuracy: 80 inv boa accuracy 66 likeli accuracy 76 inv likeli accuracy 70 Hodl accuracy: 76|| Series Size 1304 Elapsed time: 0:10:48
+The nav-coin results for 150 days and 5 degrees are: BOA Final Balance: 19521.38INV BOA: 62705.72Likeli: 18421.63Inv Likeli: 66449.20 Hodl Final Balance: 122410.23 Boa Accuracy: 83 inv boa accuracy 63 likeli accuracy 76 inv likeli accuracy 70 Hodl accuracy: 76|| Series Size 1304 Elapsed time: 0:14:25
+The nav-coin results for 150 days and 6 degrees are: BOA Final Balance: 44715.19INV BOA: 27375.54Likeli: 69498.85Inv Likeli: 17613.28 Hodl Final Balance: 122410.23 Boa Accuracy: 77 inv boa accuracy 69 likeli accuracy 76 inv likeli accuracy 70 Hodl accuracy: 76|| Series Size 1304 Elapsed time: 0:18:03
+The nav-coin results for 150 days and 7 degrees are: BOA Final Balance: 32401.34INV BOA: 37779.38Likeli: 91604.70Inv Likeli: 13362.88 Hodl Final Balance: 122410.23 Boa Accuracy: 81 inv boa accuracy 65 likeli accuracy 76 inv likeli accuracy 70 Hodl accuracy: 76|| Series Size 1304 Elapsed time: 0:21:59
 
-=======BACK TEST RESULTS 2017-12-06=======
+The nem results for 150 days and 2 degrees are: BOA Final Balance: 46239.33INV BOA: 12458.97Likeli: 50424.57Inv Likeli: 11424.87 Hodl Final Balance: 57609.44 Boa Accuracy: 76 inv boa accuracy 72 likeli accuracy 71 inv likeli accuracy 77 Hodl accuracy: 71|| Series Size 1011 Elapsed time: 0:04:07
+The nem results for 150 days and 3 degrees are: BOA Final Balance: 47461.53INV BOA: 12138.13Likeli: 50424.57Inv Likeli: 11424.87 Hodl Final Balance: 57609.44 Boa Accuracy: 78 inv boa accuracy 70 likeli accuracy 71 inv likeli accuracy 77 Hodl accuracy: 71|| Series Size 1011 Elapsed time: 0:08:15
+--The nem results for 150 days and 4 degrees are: BOA Final Balance: 84343.14INV BOA: 6830.37Likeli: 57183.12Inv Likeli: 10074.55 Hodl Final Balance: 57609.44 Boa Accuracy: 83 inv boa accuracy 65 likeli accuracy 71 inv likeli accuracy 77 Hodl accuracy: 71|| Series Size 1011 Elapsed time: 0:12:23
+The nem results for 150 days and 5 degrees are: BOA Final Balance: 50737.15INV BOA: 11354.49Likeli: 104004.20Inv Likeli: 5539.15 Hodl Final Balance: 57609.44 Boa Accuracy: 73 inv boa accuracy 75 likeli accuracy 71 inv likeli accuracy 77 Hodl accuracy: 71|| Series Size 1011 Elapsed time: 0:16:31
+The nem results for 150 days and 6 degrees are: BOA Final Balance: 37271.92INV BOA: 15456.53Likeli: 21266.04Inv Likeli: 27089.88 Hodl Final Balance: 57609.44 Boa Accuracy: 76 inv boa accuracy 72 likeli accuracy 71 inv likeli accuracy 77 Hodl accuracy: 71|| Series Size 1011 Elapsed time: 0:21:06
+The nem results for 150 days and 7 degrees are: BOA Final Balance: 19326.08INV BOA: 29809.17Likeli: 18416.01Inv Likeli: 31282.26 Hodl Final Balance: 57609.44 Boa Accuracy: 76 inv boa accuracy 72 likeli accuracy 71 inv likeli accuracy 77 Hodl accuracy: 71|| Series Size 1011 Elapsed time: 0:53:42
 
-The Litecoin results for 300 days and 4 degrees are: BOA Final Balance: 10474.98 Hodl Final Balance: 52932.18 Boa Accuracy: 135 Hodl accuracy: 155 Elapsed time: 0:07:02
+The dash results for 150 days and 2 degrees are: BOA Final Balance: 59414.60INV BOA: 10000.00Likeli: 14875.49Inv Likeli: 39941.26 Hodl Final Balance: 59414.60 Boa Accuracy: 75 inv boa accuracy 72 likeli accuracy 75 inv likeli accuracy 72 Hodl accuracy: 75|| Series Size 1422 Elapsed time: 0:04:06
+The dash results for 150 days and 3 degrees are: BOA Final Balance: 59414.60INV BOA: 10000.00Likeli: 19182.75Inv Likeli: 30972.94 Hodl Final Balance: 59414.60 Boa Accuracy: 75 inv boa accuracy 72 likeli accuracy 75 inv likeli accuracy 72 Hodl accuracy: 75|| Series Size 1422 Elapsed time: 0:08:13
+The dash results for 150 days and 4 degrees are: BOA Final Balance: 69866.16INV BOA: 8504.06Likeli: 22287.59Inv Likeli: 26658.15 Hodl Final Balance: 59414.60 Boa Accuracy: 78 inv boa accuracy 69 likeli accuracy 75 inv likeli accuracy 72 Hodl accuracy: 75|| Series Size 1422 Elapsed time: 0:12:22
+--The dash results for 150 days and 5 degrees are: BOA Final Balance: 82246.29INV BOA: 7223.99Likeli: 26416.03Inv Likeli: 22491.87 Hodl Final Balance: 59414.60 Boa Accuracy: 76 inv boa accuracy 71 likeli accuracy 75 inv likeli accuracy 72 Hodl accuracy: 75|| Series Size 1422 Elapsed time: 0:16:30
+The dash results for 150 days and 6 degrees are: BOA Final Balance: 80400.26INV BOA: 7389.85Likeli: 28041.50Inv Likeli: 21188.09 Hodl Final Balance: 59414.60 Boa Accuracy: 80 inv boa accuracy 67 likeli accuracy 75 inv likeli accuracy 72 Hodl accuracy: 75|| Series Size 1422 Elapsed time: 0:20:40
+The dash results for 150 days and 7 degrees are: BOA Final Balance: 58522.93INV BOA: 10152.36Likeli: 51269.19Inv Likeli: 11588.75 Hodl Final Balance: 59414.60 Boa Accuracy: 75 inv boa accuracy 72 likeli accuracy 75 inv likeli accuracy 72 Hodl accuracy: 75|| Series Size 1422 Elapsed time: 0:25:08
 
-=======BACK TEST RESULTS 2017-12-06=======
+The bitcoin results for 150 days and 2 degrees are: BOA Final Balance: 48938.91INV BOA: 10000.00Likeli: 48938.91Inv Likeli: 10000.00 Hodl Final Balance: 48938.91 Boa Accuracy: 87 inv boa accuracy 58 likeli accuracy 87 inv likeli accuracy 58 Hodl accuracy: 87|| Series Size 1714 Elapsed time: 0:04:41
+The bitcoin results for 150 days and 3 degrees are: BOA Final Balance: 48938.91INV BOA: 10000.00Likeli: 48938.91Inv Likeli: 10000.00 Hodl Final Balance: 48938.91 Boa Accuracy: 87 inv boa accuracy 58 likeli accuracy 87 inv likeli accuracy 58 Hodl accuracy: 87|| Series Size 1714 Elapsed time: 0:09:23
+The bitcoin results for 150 days and 4 degrees are: BOA Final Balance: 38408.93INV BOA: 12741.55Likeli: 48938.91Inv Likeli: 10000.00 Hodl Final Balance: 48938.91 Boa Accuracy: 86 inv boa accuracy 59 likeli accuracy 87 inv likeli accuracy 58 Hodl accuracy: 87|| Series Size 1714 Elapsed time: 0:14:45
+The bitcoin results for 150 days and 5 degrees are: BOA Final Balance: 27156.32INV BOA: 18021.19Likeli: 40311.92Inv Likeli: 12140.06 Hodl Final Balance: 48938.91 Boa Accuracy: 81 inv boa accuracy 64 likeli accuracy 87 inv likeli accuracy 58 Hodl accuracy: 87|| Series Size 1714 Elapsed time: 0:20:21
+The bitcoin results for 150 days and 6 degrees are: BOA Final Balance: 31766.42INV BOA: 15405.86Likeli: 40495.77Inv Likeli: 12084.94 Hodl Final Balance: 48938.91 Boa Accuracy: 84 inv boa accuracy 61 likeli accuracy 87 inv likeli accuracy 58 Hodl accuracy: 87|| Series Size 1714 Elapsed time: 0:26:02
+The bitcoin results for 150 days and 7 degrees are: BOA Final Balance: 28397.96INV BOA: 17233.25Likeli: 35030.16Inv Likeli: 13970.51 Hodl Final Balance: 48938.91 Boa Accuracy: 74 inv boa accuracy 71 likeli accuracy 87 inv likeli accuracy 58 Hodl accuracy: 87|| Series Size 1714 Elapsed time: 0:31:59
 
-The Litecoin results for 300 days and 3 degrees are: BOA Final Balance: 212823.82 Hodl Final Balance: 52932.18 Boa Accuracy: 186 Hodl accuracy: 155 Elapsed time: 0:07:22
-
-=======BACK TEST RESULTS 2017-12-08=======
-
-The Litecoin results for 300 days and 3 degrees are: BOA Final Balance: 215083.00 Hodl Final Balance: 52611.84 Boa Accuracy: 186 Hodl accuracy: 155 Elapsed time: 0:07:02
-
-=======BACK TEST RESULTS 2017-12-20=======
-
-The Litecoin results for 2 days and 3 degrees are: BOA Final Balance: 1099.27 Hodl Final Balance: 1099.27 Boa Accuracy: 1 Hodl accuracy: 1 Elapsed time: 0:00:03
-
-=======BACK TEST RESULTS 2017-12-21=======
-
-The Litecoin results for 300 days and 3 degrees are: BOA Final Balance: 401229.80 Hodl Final Balance: 83916.94 Boa Accuracy: 179 Hodl accuracy: 150 Elapsed time: 0:11:35
+The litecoin results for 150 days and 2 degrees are: BOA Final Balance: 36282.14INV BOA: 17018.60Likeli: 18987.42Inv Likeli: 32520.02 Hodl Final Balance: 61747.13 Boa Accuracy: 74 inv boa accuracy 74 likeli accuracy 78 inv likeli accuracy 70 Hodl accuracy: 78|| Series Size 1714 Elapsed time: 0:04:57
+The litecoin results for 150 days and 3 degrees are: BOA Final Balance: 32320.36INV BOA: 19104.72Likeli: 36469.73Inv Likeli: 16931.06 Hodl Final Balance: 61747.13 Boa Accuracy: 72 inv boa accuracy 76 likeli accuracy 78 inv likeli accuracy 70 Hodl accuracy: 78|| Series Size 1714 Elapsed time: 0:10:07
+The litecoin results for 150 days and 4 degrees are: BOA Final Balance: 44097.22INV BOA: 14002.50Likeli: 36469.73Inv Likeli: 16931.06 Hodl Final Balance: 61747.13 Boa Accuracy: 78 inv boa accuracy 70 likeli accuracy 78 inv likeli accuracy 70 Hodl accuracy: 78|| Series Size 1714 Elapsed time: 0:15:16
+The litecoin results for 150 days and 5 degrees are: BOA Final Balance: 52949.18INV BOA: 11661.58Likeli: 26101.60Inv Likeli: 23656.45 Hodl Final Balance: 61747.13 Boa Accuracy: 84 inv boa accuracy 64 likeli accuracy 78 inv likeli accuracy 70 Hodl accuracy: 78|| Series Size 1714 Elapsed time: 0:20:27
+The litecoin results for 150 days and 6 degrees are: BOA Final Balance: 16966.52INV BOA: 36393.51Likeli: 60258.00Inv Likeli: 10247.13 Hodl Final Balance: 61747.13 Boa Accuracy: 75 inv boa accuracy 73 likeli accuracy 78 inv likeli accuracy 70 Hodl accuracy: 78|| Series Size 1714 Elapsed time: 0:25:35
+The litecoin results for 150 days and 7 degrees are: BOA Final Balance: 18899.01INV BOA: 32672.14Likeli: 20512.25Inv Likeli: 30102.56 Hodl Final Balance: 61747.13 Boa Accuracy: 71 inv boa accuracy 77 likeli accuracy 78 inv likeli accuracy 70 Hodl accuracy: 78|| Series Size 1714 Elapsed time: 0:31:03
