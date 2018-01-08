@@ -14,7 +14,7 @@ def main():
     candle_btc = candlesticks.CandleSticks("BTC-USD")
     candle_eth = candlesticks.CandleSticks("ETH-USD")
     candle_ltc = candlesticks.CandleSticks("LTC-USD")
-
+    #THIS IS FOR A TEST PR ASDFJSADFKHASDFKHASKDF
     try:
         # btc_series = http://api.bitcoincharts.com/v1/csv/coinbaseUSD.csv.gz
         btc_series = stat_object.helper.parse_csv('https://coinmetrics.io/data/btc.csv')
