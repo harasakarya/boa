@@ -10,21 +10,20 @@ def main():
     stat_object = statistics.Calculate_Stats()
     now = datetime.datetime.now()
     scrape_obj = scraper.Scraper()
-    candle_btc = candlesticks.CandleSticks("BTC-USD")
-    candle_eth = candlesticks.CandleSticks("ETH-USD")
-    candle_ltc = candlesticks.CandleSticks("LTC-USD")
 
     coin_names = [
         "ripple", "ethereum", "monero", "stellar", "nav-coin", "nem", "dash",
         "bitcoin", "litecoin"
     ]
 
+    print(scrape_obj.get_price_history("ripple"))
+
     coins = []
     for coin in coin_names:
         coins.append(crypto_object.CryptoObject(coin,
                                                 scrape_obj.get_price_history(coin), 4))
 
-    OFFICIAL_BOA(coins, now)
+    # OFFICIAL_BOA(coins, now)
     # text_message_report(quick_report(coins,now))
     print(quick_report(coins, now))
 
@@ -97,13 +96,13 @@ def OFFICIAL_BOA(coins, now):
     s.login("admin@cryptoboa.io", "Aesthetics21!P")
 
     me = "admin@cryptoboa.io"
-    you = ["officialemre@gmail.com"]
-    # you = ["officialemre@gmail.com", "cryptoboa@exode.com", "lechalex1@gmail.com",
-    #        "bhomsi@gmail.com", "bskb04@gmail.com", "redguitarfreak88@gmail.com",
-    #        "zotthewizard@gmail.com", "dnhvcrpt@gmail.com", "tartrate@gmail.com", "nicastrh@gmail.com",
-    #         "jonathanng222@gmail.com", "alexswenews@gmail.com", "dvddvdsn777@gmail.com", "akoruth95@gmail.com",
-    #        "miroslavstricevic@gmail.com","kninjas@gmail.com","biggt620@gmail.com","davidbeddow92@gmail.com",
-    #        "sixohofficial@gmail.com"]
+    # you = ["officialemre@gmail.com"]
+    you = ["officialemre@gmail.com", "cryptoboa@exode.com", "lechalex1@gmail.com",
+           "bhomsi@gmail.com", "bskb04@gmail.com", "redguitarfreak88@gmail.com",
+           "zotthewizard@gmail.com", "dnhvcrpt@gmail.com", "tartrate@gmail.com", "nicastrh@gmail.com",
+            "jonathanng222@gmail.com", "alexswenews@gmail.com", "dvddvdsn777@gmail.com", "akoruth95@gmail.com",
+           "miroslavstricevic@gmail.com","kninjas@gmail.com","biggt620@gmail.com","davidbeddow92@gmail.com",
+           "sixohofficial@gmail.com"]
 
     for name in you:
         # Create message container - the correct MIME type is multipart/alternative.
