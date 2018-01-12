@@ -86,9 +86,8 @@ def backtest_alpha():
             random_balance *= random_value
 
             # add to the arrays
-            for k in range(current_name.__len__()):
-                hodl_result.append(sum(hodl_balance))
-                boa_classic_result.append(sum(classic_boa_balance))
+            hodl_result.append(sum(hodl_balance))
+            boa_classic_result.append(sum(classic_boa_balance))
             random_result.append(random_balance)
             boa_result.append(boa_balance)
 

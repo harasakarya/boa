@@ -15,7 +15,7 @@ class Scraper():
 
     def get_price_history(self, name):
 
-        self.soup = BeautifulSoup(urllib.request.urlopen('https://coinmarketcap.com/currencies/' + name + '/historical-data/?start=20130428&end=20180104'), 'html.parser')
+        self.soup = BeautifulSoup(urllib.request.urlopen('https://coinmarketcap.com/currencies/' + name + '/historical-data/?start=20130428&end='+dt.now().strftime("%Y-%m-%d")), 'html.parser')
 
         series = pandas.Series()
 
