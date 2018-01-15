@@ -64,3 +64,11 @@ The results for a portfolio containing ['ripple', 'ethereum', 'monero', 'stellar
 =======BACK TEST RESULTS 2018-01-07=======
 
 The results for a portfolio containing ['ripple', 'ethereum', 'monero', 'stellar', 'nav-coin', 'nem', 'dash', 'bitcoin', 'litecoin'] with degrees [4, 4, 4, 4, 4, 4, 4, 4, 4] are BOA Final Balance: 5126577.22 Random Final Balance: 250285.35 Hodl Final Balance: 1729668.92 Boa Accuracy: 55 Random accuracy: 43 Elapsed time: 1:30:51
+
+=======BACK TEST RESULTS 2018-01-11=======
+
+The results for a portfolio containing ['ripple', 'ethereum', 'monero', 'stellar', 'nav-coin', 'dash', 'bitcoin', 'litecoin'] with degrees [4, 4, 4, 4, 4, 4, 4, 4, 4] are BOA Final Balance: 2497643.05 Random Final Balance: 174106.91 Hodl Final Balance: 1119897.73 Boa Accuracy: 63 Random accuracy: 37 Elapsed time: 1:36:19
+
+=======BACK TEST RESULTS 2018-01-11=======
+
+The results for a portfolio containing ['ripple', 'ethereum', 'monero', 'stellar', 'nav-coin', 'dash', 'bitcoin', 'litecoin', 'ethereum-classic', 'lisk', 'verge', 'zcash', 'stratis'] with degrees [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4] are BOA Final Balance: 3979718424.44 Random Final Balance: 198110.89 Hodl Final Balance: 6455059.66 Boa Accuracy: 46 Random accuracy: 29 Elapsed time: 1:47:51

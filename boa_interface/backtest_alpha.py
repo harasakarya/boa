@@ -12,11 +12,14 @@ def backtest_alpha():
     scraper_obj = scraper.Scraper()
 
     current_name = [
-        "ripple", "ethereum", "monero", "stellar", "nav-coin", "nem", "dash",
-        "bitcoin", "litecoin"
+        "ripple", "ethereum", "monero", "stellar", "nav-coin", "dash",
+        "ethereum-classic", "lisk", "verge", "zcash","stratis", "bitcoin", "litecoin"
+
     ]
 
-    current_degree = [4,4,4,4,4,4,4,4,4]
+    current_degree = []
+    for i in range(current_name.__len__()):
+        current_degree.append(4)
 
     current_series = []
     price_change = []

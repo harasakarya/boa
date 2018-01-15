@@ -12,8 +12,8 @@ def main():
     scrape_obj = scraper.Scraper()
 
     coin_names = [
-        "ripple", "ethereum", "monero", "stellar", "nav-coin", "nem", "dash",
-        "bitcoin", "litecoin"
+        "ripple", "ethereum", "monero", "stellar", "nav-coin", "dash",
+        "ethereum-classic", "lisk", "verge", "zcash","stratis", "bitcoin", "litecoin"
     ]
 
     print(scrape_obj.get_price_history("ripple"))
@@ -23,7 +23,7 @@ def main():
         coins.append(crypto_object.CryptoObject(coin,
                                                 scrape_obj.get_price_history(coin), 4))
 
-    # OFFICIAL_BOA(coins, now)
+    OFFICIAL_BOA(coins, now)
     # text_message_report(quick_report(coins,now))
     print(quick_report(coins, now))
 
@@ -102,6 +102,7 @@ def OFFICIAL_BOA(coins, now):
            "zotthewizard@gmail.com", "dnhvcrpt@gmail.com", "tartrate@gmail.com", "nicastrh@gmail.com",
             "jonathanng222@gmail.com", "alexswenews@gmail.com", "dvddvdsn777@gmail.com", "akoruth95@gmail.com",
            "miroslavstricevic@gmail.com","kninjas@gmail.com","biggt620@gmail.com","davidbeddow92@gmail.com",
+           "ignjatovic@gmail.com", "robert.kamerer@gmail.com","skrussel15@gmail.com",
            "sixohofficial@gmail.com"]
 
     for name in you:
