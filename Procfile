@@ -1,1 +1,1 @@
-web: gunicorn boa_interface.main:app
+worker: python boa_interface/main.py
