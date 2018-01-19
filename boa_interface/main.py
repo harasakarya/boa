@@ -3,7 +3,10 @@ import datetime
 import html
 import pandas
 from datetime import datetime as dt
+import matplotlib
+matplotlib.use('Agg')
 from matplotlib import pyplot
+
 
 
 def main():
