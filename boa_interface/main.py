@@ -6,7 +6,6 @@ from datetime import datetime as dt
 from matplotlib import pyplot
 
 
-
 def main():
     stat_object = statistics.Calculate_Stats()
     now = datetime.datetime.now()
