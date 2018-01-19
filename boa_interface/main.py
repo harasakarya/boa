@@ -120,40 +120,40 @@ def OFFICIAL_BOA(coins, now):
                         <body>
                             <h1>BOA Report ''' + now.strftime("%Y-%m-%d %H:%M") + '''</h1>
                 '''
-        #
-        # for coin in coins:
-        #     tldr_val = coin.get_prediction_plus(
-        #         coin.get_most_recent_pattern()) if coin.get_stationarity() else coin.get_stationarity_as_string()
-        #     html += '''
-        #                     <h2> ''' + coin.get_name() + '''</h2>
-        #
-        #                         <h4>
-        #                             <b> TL;DR: ''' + tldr_val + '''</b>
-        #                         </h4>
-        #                         <ul>
-        #                             <li><b>''' + coin.get_stationarity_as_string() + '''</b>, with a Chi-Square sigma of ''' + coin.get_stat_sigma() + '''
-        #                             and a Chi-Square critical value of ''' + coin.get_stat_critical_value() + '''</li>
-        #                             <li><b>''' + coin.get_randomness_as_string() + '''ly</b> distributed, with a Chi-Square sigma of
-        #                                 ''' + coin.get_rand_sigma() + ''' and a Chi-Square critical value of ''' + coin.get_rand_critical_value() + '''
-        #                             <li><b>''' + coin.get_independence_as_string() + '''</b>, with a Chi-Square sigma of ''' + coin.get_ind_sigma() + '''
-        #                             and a Chi-Square critical value of ''' + coin.get_ind_critical_value() + '''</li>
-        #                         </ul>
-        #
-        #
-        #
-        #                         <p>After analysing the price history, BOA concluded that there is a <b>''' + '%.2f' % coin.get_odds_of_increase(
-        #                         coin.get_most_recent_pattern()) + '''%</b>
-        #                         chance price will go up, and a <b>''' + '%.2f' % coin.get_odds_of_decrease(
-        #                         coin.get_most_recent_pattern()) + '''%</b>
-        #                         chance price will go down. The average magnitude of the up move is <b>''' + '%.2f' % coin.get_magnitude_of_increase(
-        #                         coin.get_most_recent_pattern()) + '''%</b>
-        #                         and the average magnitude of the down move is <b>''' + '%.2f' % coin.get_magnitude_of_decrease(
-        #                         coin.get_most_recent_pattern()) + '''%</b>.
-        #                         Today, you should <b>''' + coin.get_prediction_plus(coin.get_most_recent_pattern()) + '''</b>.
-        #                         </p>
-        #                         <br/>
-        #         '''
-        #
+
+        for coin in coins:
+            tldr_val = coin.get_prediction_plus(
+                coin.get_most_recent_pattern()) if coin.get_stationarity() else coin.get_stationarity_as_string()
+            html += '''
+                            <h2> ''' + coin.get_name() + '''</h2>
+
+                                <h4>
+                                    <b> TL;DR: ''' + tldr_val + '''</b>
+                                </h4>
+                                <ul>
+                                    <li><b>''' + coin.get_stationarity_as_string() + '''</b>, with a Chi-Square sigma of ''' + coin.get_stat_sigma() + '''
+                                    and a Chi-Square critical value of ''' + coin.get_stat_critical_value() + '''</li>
+                                    <li><b>''' + coin.get_randomness_as_string() + '''ly</b> distributed, with a Chi-Square sigma of
+                                        ''' + coin.get_rand_sigma() + ''' and a Chi-Square critical value of ''' + coin.get_rand_critical_value() + '''
+                                    <li><b>''' + coin.get_independence_as_string() + '''</b>, with a Chi-Square sigma of ''' + coin.get_ind_sigma() + '''
+                                    and a Chi-Square critical value of ''' + coin.get_ind_critical_value() + '''</li>
+                                </ul>
+
+
+
+                                <p>After analysing the price history, BOA concluded that there is a <b>''' + '%.2f' % coin.get_odds_of_increase(
+                                coin.get_most_recent_pattern()) + '''%</b>
+                                chance price will go up, and a <b>''' + '%.2f' % coin.get_odds_of_decrease(
+                                coin.get_most_recent_pattern()) + '''%</b>
+                                chance price will go down. The average magnitude of the up move is <b>''' + '%.2f' % coin.get_magnitude_of_increase(
+                                coin.get_most_recent_pattern()) + '''%</b>
+                                and the average magnitude of the down move is <b>''' + '%.2f' % coin.get_magnitude_of_decrease(
+                                coin.get_most_recent_pattern()) + '''%</b>.
+                                Today, you should <b>''' + coin.get_prediction_plus(coin.get_most_recent_pattern()) + '''</b>.
+                                </p>
+                                <br/>
+                '''
+
         html += " <p> See you tomorrow!  <br/><br/> Disclaimer: The information provided here and in accompanying material " \
                 "is for informational purposes only.  It should not be considered legal or financial advice.  " \
                 "You should consult with an attorney or other professional to determine what may be best for your individual needs. " \
