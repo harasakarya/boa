@@ -33,7 +33,7 @@ def backtest_alpha():
     start_time = time.time()
 
     today = datetime.date.today()
-    begin = datetime.date(2017, 2, 1)
+    begin = datetime.date(2017, 1, 1)
 
     days_to_test = (today - begin).days
     print(days_to_test)
@@ -50,13 +50,13 @@ def backtest_alpha():
         random_balance = 9999
         boa_accuracy = 0
         random_accuracy = 0
-        order = j
         hodl_result = []
         random_result = []
         boa_result = []
         boa_classic_result = []
+        fee = 0.001
 
-        for i in range(1, days_to_test + 1):
+        for i in range(1, days_to_test + 1-21):
 
             coins = []
 
@@ -68,7 +68,10 @@ def backtest_alpha():
             # calculate boa values up to current point
             prediction_array = []
             for coin in coins:
-                prediction_array.append(coin.get_numeric_prediction(coin.get_most_recent_pattern()))
+                if coin.get_stationarity():
+                    prediction_array.append(coin.get_numeric_prediction(coin.get_most_recent_pattern()))
+                else:
+                    prediction_array.append(0.0)
 
             current_change = []
             for change in price_change:
@@ -77,7 +80,7 @@ def backtest_alpha():
 
 
             # decide buy or sell
-            boa_pick = current_change[prediction_array.index(max(prediction_array))]
+            boa_pick = current_change[prediction_array.index(max(prediction_array))]-fee
             boa_balance *= boa_pick if max(prediction_array) > 1.0 else 1.0
 
             for k in range(current_name.__len__()):
@@ -96,7 +99,7 @@ def backtest_alpha():
 
             # record accuracy
             boa_accuracy += 1 if (
-                boa_pick >= max(current_change)) else 0
+                boa_pick + fee >= max(current_change)) else 0
             random_accuracy += 1 if (
                 random_value >= max(current_change)) else 0
 
