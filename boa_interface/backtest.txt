@@ -61,3 +61,9 @@ The litecoin results for 150 days and 4 degrees are: BOA Final Balance: 44097.22
 The litecoin results for 150 days and 5 degrees are: BOA Final Balance: 52949.18INV BOA: 11661.58Likeli: 26101.60Inv Likeli: 23656.45 Hodl Final Balance: 61747.13 Boa Accuracy: 84 inv boa accuracy 64 likeli accuracy 78 inv likeli accuracy 70 Hodl accuracy: 78|| Series Size 1714 Elapsed time: 0:20:27
 The litecoin results for 150 days and 6 degrees are: BOA Final Balance: 16966.52INV BOA: 36393.51Likeli: 60258.00Inv Likeli: 10247.13 Hodl Final Balance: 61747.13 Boa Accuracy: 75 inv boa accuracy 73 likeli accuracy 78 inv likeli accuracy 70 Hodl accuracy: 78|| Series Size 1714 Elapsed time: 0:25:35
 The litecoin results for 150 days and 7 degrees are: BOA Final Balance: 18899.01INV BOA: 32672.14Likeli: 20512.25Inv Likeli: 30102.56 Hodl Final Balance: 61747.13 Boa Accuracy: 71 inv boa accuracy 77 likeli accuracy 78 inv likeli accuracy 70 Hodl accuracy: 78|| Series Size 1714 Elapsed time: 0:31:03
+
+=======BACK TEST RESULTS 2018-01-14=======
+
+
+=======BACK TEST RESULTS 2018-01-14=======
+

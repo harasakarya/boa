@@ -16,14 +16,14 @@ def main():
         "ethereum-classic", "lisk", "verge", "zcash","stratis", "bitcoin", "litecoin"
     ]
 
-    print(scrape_obj.get_price_history("ripple"))
+    print(scrape_obj.get_price_history("zcash"))
 
     coins = []
     for coin in coin_names:
         coins.append(crypto_object.CryptoObject(coin,
                                                 scrape_obj.get_price_history(coin), 4))
 
-    OFFICIAL_BOA(coins, now)
+    # OFFICIAL_BOA(coins, now)
     # text_message_report(quick_report(coins,now))
     print(quick_report(coins, now))
 
@@ -102,7 +102,8 @@ def OFFICIAL_BOA(coins, now):
            "zotthewizard@gmail.com", "dnhvcrpt@gmail.com", "tartrate@gmail.com", "nicastrh@gmail.com",
             "jonathanng222@gmail.com", "alexswenews@gmail.com", "dvddvdsn777@gmail.com", "akoruth95@gmail.com",
            "miroslavstricevic@gmail.com","kninjas@gmail.com","biggt620@gmail.com","davidbeddow92@gmail.com",
-           "ignjatovic@gmail.com", "robert.kamerer@gmail.com","skrussel15@gmail.com",
+           "ignjatovic@gmail.com", "robert.kamerer@gmail.com","skrussel15@gmail.com", "pupo.robert@gmail.com",
+           "obpatel96@gmail.com","ivancvetkovic83@gmail.com","vaibhav.shrishail@gmail.com",
            "sixohofficial@gmail.com"]
 
     for name in you:

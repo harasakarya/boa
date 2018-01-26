@@ -61,7 +61,7 @@ class Calculate_Stats:
             sigma += next_value
 
         degrees_of_freedom = (len(observed_values)-1)
-        probability = .05
+        probability = .001
         critical_value = chi2.isf(probability,degrees_of_freedom)
         return critical_value, sigma
 
