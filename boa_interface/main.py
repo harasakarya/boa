@@ -7,52 +7,27 @@ from matplotlib import pyplot
 
 
 def main():
+
     stat_object = statistics.Calculate_Stats()
+
     now = datetime.datetime.now()
     scrape_obj = scraper.Scraper()
+
+    # stat_object.fourier_analysis(scrape_obj.get_price_history("ethereum"))
 
     coin_names = [
         "ripple", "ethereum", "monero", "stellar", "nav-coin", "dash",
         "ethereum-classic", "lisk", "verge", "zcash","stratis", "bitcoin", "litecoin"
     ]
 
-    print(scrape_obj.get_price_history("zcash"))
-
     coins = []
     for coin in coin_names:
         coins.append(crypto_object.CryptoObject(coin,
                                                 scrape_obj.get_price_history(coin), 4))
 
-    # OFFICIAL_BOA(coins, now)
+    # print(quick_report(coins, now))
+    OFFICIAL_BOA(coins, now)
     # text_message_report(quick_report(coins,now))
-    print(quick_report(coins, now))
-
-
-def exit_tester(candle_ltc):
-    df = candle_ltc.fetch(dt(2017, 3, 1), dt(2017, 12, 13), 1440)
-    series1 = pandas.Series(df['close'].sub(df['open'], axis=0) / df['open'], index=df.index.values)
-    series2 = pandas.Series(df['high'].sub(df['open'], axis=0) / df['open'], index=df.index.values)
-    print(series1.describe(), series2.describe())
-    reg_val = 1000
-    take_val = 1000
-    take_exit = []
-    reg_exit = []
-    count = 0
-    for i in range(series1.size - 300, series1.size - 1):
-
-        if series2.values[i] >= (pandas.Series.mean(series2[:i]) + pandas.Series.std(series2[:i]) * 3):
-            take_val *= (1 + (pandas.Series.mean(series2[:i]) + pandas.Series.std(series2[:i]) * 3))
-            take_exit.append(take_val)
-            count += 1
-        else:
-            take_val *= (1 + series1.values[i])
-            take_exit.append(take_val)
-
-        reg_val *= (1 + series1.values[i])
-        reg_exit.append(reg_val)
-        print(reg_val, take_val)
-
-    print(count, (pandas.Series.mean(series2[:i]) + pandas.Series.std(series2[:i]) * 3))
 
 
 def quick_report(coins, now):
