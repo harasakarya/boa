@@ -1,0 +1,66 @@
+</tr>
+                </table>
+            </td>
+        </tr>
+        <!-- 3 Even Columns : END -->
+
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+            <td aria-hidden="true" height="40" style="font-size: 0; line-height: 0;">
+                &nbsp;
+            </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+
+        <!-- 1 Column Text : BEGIN -->
+        <tr>
+            <td bgcolor="#ffffff">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                        <td style="padding: 40px; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #555555;">
+                            We hope BOA is useful to you in your cryptocurrency trading and investing. If you enjoy the email, consider forwarding it to a friend, who can get his or her own free daily email at <a href="cryptoboa.io"> cryptoboa.io</a>!
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- 1 Column Text : END -->
+
+    </table>
+    <!-- Email Body : END -->
+
+    <!-- Email Footer : BEGIN -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px; font-family: sans-serif; color: #888888; font-size: 12px; line-height: 140%;">
+        <!--<tr>
+            <td style="padding: 40px 10px; width: 100%; font-family: sans-serif; font-size: 12px; line-height: 140%; text-align: center; color: #888888;" class="x-gmail-data-detectors">
+                <webversion style="color: #cccccc; text-decoration: underline; font-weight: bold;">View as a Web Page</webversion>
+                <br><br>
+                Company Name<br>123 Fake Street, SpringField, OR, 97477 US<br>(123) 456-7890
+                <br><br>
+                <unsubscribe style="color: #888888; text-decoration: underline;">unsubscribe</unsubscribe>
+            </td>
+        </tr>-->
+    </table>
+    <!-- Email Footer : END -->
+
+    <!-- Full Bleed Background Section : BEGIN -->
+    <table role="presentation" bgcolor="#554a8d" cellspacing="0" cellpadding="0" border="0" align="center" width="100%">
+        <tr>
+            <td valign="top" align="center">
+                <div style="max-width: 600px; margin: auto;" class="email-container">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td style="padding: 40px; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 140%; color: #ffffff;">
+                                <p style="margin: 0;">Disclaimer: The information provided here and in accompanying material is for informational purposes only. It should not be considered legal or financial advice. You should consult with an attorney, financial advisor or other professional to determine what may be best for your individual needs. I do not make any guarantee or other promise as to any results that may be obtained from using this content. No one should make any investment decision without first consulting his or her own financial advisor and conducting his or her own research and due diligence.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <!-- Full Bleed Background Section : END -->
+
+    </center>
+</body>
+</html>

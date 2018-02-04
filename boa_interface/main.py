@@ -1,9 +1,6 @@
-from boa_logic import statistics, crypto_object, scraper, candlesticks
+from boa_logic import statistics, crypto_object, scraper, email_creator
 import datetime
 import html
-import pandas
-from datetime import datetime as dt
-from matplotlib import pyplot
 
 
 def main():
@@ -12,11 +9,13 @@ def main():
 
     now = datetime.datetime.now()
     scrape_obj = scraper.Scraper()
+    ec = email_creator.EmailCreator()
 
     # stat_object.fourier_analysis(scrape_obj.get_price_history("ethereum"))
 
     coin_names = [
-        "ripple", "ethereum", "monero", "stellar", "nav-coin", "dash",
+        "ripple",
+        "ethereum", "monero", "stellar", "nav-coin", "dash",
         "ethereum-classic", "lisk", "verge", "zcash","stratis", "bitcoin", "litecoin"
     ]
 
@@ -26,7 +25,7 @@ def main():
                                                 scrape_obj.get_price_history(coin), 4))
 
     # print(quick_report(coins, now))
-    OFFICIAL_BOA(coins, now)
+    OFFICIAL_BOA(coins, now, ec)
     # text_message_report(quick_report(coins,now))
 
 
@@ -63,7 +62,7 @@ def text_message_report(result):
         body=result)
 
 
-def OFFICIAL_BOA(coins, now):
+def OFFICIAL_BOA(coins, now, ec):
     import smtplib
     from email.mime.multipart import MIMEMultipart
     from email.mime.text import MIMEText
@@ -71,15 +70,15 @@ def OFFICIAL_BOA(coins, now):
     s.login("admin@cryptoboa.io", "Aesthetics21!P")
 
     me = "admin@cryptoboa.io"
-    # you = ["officialemre@gmail.com"]
-    you = ["officialemre@gmail.com", "cryptoboa@exode.com", "lechalex1@gmail.com",
-           "bhomsi@gmail.com", "bskb04@gmail.com", "redguitarfreak88@gmail.com",
-           "zotthewizard@gmail.com", "dnhvcrpt@gmail.com", "tartrate@gmail.com", "nicastrh@gmail.com",
-            "jonathanng222@gmail.com", "alexswenews@gmail.com", "dvddvdsn777@gmail.com", "akoruth95@gmail.com",
-           "miroslavstricevic@gmail.com","kninjas@gmail.com","biggt620@gmail.com","davidbeddow92@gmail.com",
-           "ignjatovic@gmail.com", "robert.kamerer@gmail.com","skrussel15@gmail.com", "pupo.robert@gmail.com",
-           "obpatel96@gmail.com","ivancvetkovic83@gmail.com","vaibhav.shrishail@gmail.com",
-           "sixohofficial@gmail.com"]
+    you = ["officialemre@gmail.com"]
+    # you = ["officialemre@gmail.com", "cryptoboa@exode.com", "lechalex1@gmail.com",
+    #        "bhomsi@gmail.com", "bskb04@gmail.com", "redguitarfreak88@gmail.com",
+    #        "zotthewizard@gmail.com", "dnhvcrpt@gmail.com", "tartrate@gmail.com", "nicastrh@gmail.com",
+    #         "jonathanng222@gmail.com", "alexswenews@gmail.com", "dvddvdsn777@gmail.com", "akoruth95@gmail.com",
+    #        "miroslavstricevic@gmail.com","kninjas@gmail.com","biggt620@gmail.com","davidbeddow92@gmail.com",
+    #        "ignjatovic@gmail.com", "robert.kamerer@gmail.com","skrussel15@gmail.com", "pupo.robert@gmail.com",
+    #        "obpatel96@gmail.com","ivancvetkovic83@gmail.com","vaibhav.shrishail@gmail.com",
+    #        "sixohofficial@gmail.com"]
 
     for name in you:
         # Create message container - the correct MIME type is multipart/alternative.
@@ -88,57 +87,7 @@ def OFFICIAL_BOA(coins, now):
         msg['From'] = me
         msg['To'] = name
 
-        # Create the body of the message (a plain-text and an HTML version).
-        html = '''<html>
-                        <head>
-                            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-                            <!-- Optional theme -->
-                            <link rel="stylesheet" href="cryptoboa.io/css/creative.css">
-                            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-                        </head>
-                        <body>
-                            <h1>BOA Report ''' + now.strftime("%Y-%m-%d %H:%M") + '''</h1>
-                '''
-
-        for coin in coins:
-            tldr_val = coin.get_prediction_plus(
-                coin.get_most_recent_pattern()) if coin.get_stationarity() else coin.get_stationarity_as_string()
-            html += '''
-                            <h2> ''' + coin.get_name() + '''</h2>
-  
-                                <h4>
-                                    <b> TL;DR: ''' + tldr_val + '''</b>
-                                </h4>
-                                <ul>
-                                    <li><b>''' + coin.get_stationarity_as_string() + '''</b>, with a Chi-Square sigma of ''' + coin.get_stat_sigma() + '''
-                                    and a Chi-Square critical value of ''' + coin.get_stat_critical_value() + '''</li>
-                                    <li><b>''' + coin.get_randomness_as_string() + '''ly</b> distributed, with a Chi-Square sigma of 
-                                        ''' + coin.get_rand_sigma() + ''' and a Chi-Square critical value of ''' + coin.get_rand_critical_value() + '''
-                                    <li><b>''' + coin.get_independence_as_string() + '''</b>, with a Chi-Square sigma of ''' + coin.get_ind_sigma() + '''
-                                    and a Chi-Square critical value of ''' + coin.get_ind_critical_value() + '''</li>
-                                </ul>
-
-                                      
-
-                                <p>After analysing the price history, BOA concluded that there is a <b>''' + '%.2f' % coin.get_odds_of_increase(
-                                coin.get_most_recent_pattern()) + '''%</b>
-                                chance price will go up, and a <b>''' + '%.2f' % coin.get_odds_of_decrease(
-                                coin.get_most_recent_pattern()) + '''%</b>
-                                chance price will go down. The average magnitude of the up move is <b>''' + '%.2f' % coin.get_magnitude_of_increase(
-                                coin.get_most_recent_pattern()) + '''%</b>
-                                and the average magnitude of the down move is <b>''' + '%.2f' % coin.get_magnitude_of_decrease(
-                                coin.get_most_recent_pattern()) + '''%</b>.
-                                Today, you should <b>''' + coin.get_prediction_plus(coin.get_most_recent_pattern()) + '''</b>.
-                                </p>
-                                <br/>
-                '''
-
-        html += " <p> See you tomorrow!  <br/><br/> Disclaimer: The information provided here and in accompanying material " \
-                "is for informational purposes only.  It should not be considered legal or financial advice.  " \
-                "You should consult with an attorney or other professional to determine what may be best for your individual needs. " \
-                "\n\n I do not make any guarantee or other promise as to any results that may be obtained from using this content. " \
-                "No one should make any investment decision without first consulting his or her own financial advisor and conducting " \
-                "his or her own research and due diligence.</p>"
+        html = ec.make_email(coins)
         msg.attach(MIMEText(html, 'html'))
 
         s.sendmail(me, name, msg.as_string())
