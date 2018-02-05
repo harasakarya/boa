@@ -1,0 +1,1 @@
+worker: python boa_interface/main.py
