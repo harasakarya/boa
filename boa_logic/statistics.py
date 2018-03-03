@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-import plotly.graph_objs as go
 from scipy.stats import chi2
-import numpy.polynomial.polynomial as poly
-from boa_logic import helper_methods, dependence_object
+from boa_logic import helper_methods
+import plotly as py
+
 
 
 class Calculate_Stats:
@@ -80,3 +80,25 @@ class Calculate_Stats:
         critical_value, sigma = self.calculate_chi_squared(first_deciles,second_deciles)
 
         return (critical_value > sigma), sigma, critical_value;
+
+    def fourier_analysis(self, series):
+
+        import matplotlib.pyplot as plt
+        import plotly
+        import numpy
+
+        fourier = numpy.fft.fft(series.values)
+        y = abs(fourier)[int(series.size/2):series.size]
+        print(fourier)
+
+        index= []
+        for i in range(300):
+            index.append(i)
+
+        data = [plotly.graph_objs.Bar(
+            x=index,
+            y=y
+        )]
+
+        plotly.offline.plot(data, filename='basic-bar')
+
