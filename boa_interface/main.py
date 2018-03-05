@@ -98,12 +98,13 @@ def OFFICIAL_BOA(coins, now):
     me = "admin@cryptoboa.io"
     # you = ["officialemre@gmail.com"]
     you = ["officialemre@gmail.com", "cryptoboa@exode.com", "lechalex1@gmail.com",
-           "bhomsi@gmail.com", "bskb04@gmail.com", "redguitarfreak88@gmail.com",
+           "bhomsi@gmail.com", "bskb04@gmail.com",
            "zotthewizard@gmail.com", "dnhvcrpt@gmail.com", "nicastrh@gmail.com",
             "jonathanng222@gmail.com", "alexswenews@gmail.com", "dvddvdsn777@gmail.com", "akoruth95@gmail.com",
            "miroslavstricevic@gmail.com","kninjas@gmail.com","biggt620@gmail.com","davidbeddow92@gmail.com",
            "ignjatovic@gmail.com", "robert.kamerer@gmail.com","skrussel15@gmail.com", "pupo.robert@gmail.com",
-           "obpatel96@gmail.com","ivancvetkovic83@gmail.com","vaibhav.shrishail@gmail.com", "milandotlic@gmail.com"
+           "obpatel96@gmail.com","ivancvetkovic83@gmail.com","vaibhav.shrishail@gmail.com", "milandotlic@gmail.com",
+            "james.w.fant@wellsfargo.com",
            "sixohofficial@gmail.com"]
 
     for name in you:
