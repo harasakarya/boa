@@ -56,7 +56,7 @@ def backtest_alpha():
         boa_classic_result = []
         fee = 0.001
 
-        for i in range(1, days_to_test + 1-21):
+        for i in range(1, days_to_test + 1-26):
 
             coins = []
 
@@ -80,8 +80,16 @@ def backtest_alpha():
 
 
             # decide buy or sell
-            boa_pick = current_change[prediction_array.index(max(prediction_array))]-fee
-            boa_balance *= boa_pick if max(prediction_array) > 1.0 else 1.0
+            #boa_pick = current_change[prediction_array.index(max(prediction_array))]-fee
+            boa_pick = 0
+            counter = 0
+            for val in range(prediction_array.__len__()):
+                if prediction_array[val] >= 1.0:
+                    boa_pick += current_change[val]
+                    counter += 1
+            boa_balance *= boa_pick/counter if max(prediction_array) > 1.0 else 1.0
+
+            print(boa_pick/counter)
 
             for k in range(current_name.__len__()):
                 hodl_balance[k] *= current_change[k]
@@ -160,7 +168,7 @@ def backtest_alpha():
 
         figure = go.Figure(data=[Hold, BOA],layout=layout)
         url = py.offline.plot(figure, image_height=400, image_width=400, auto_open=False,
-                              filename='results.html', )
+                              filename='results2018.html', )
 
         # pyplot.plot(hodl_result)
         # pyplot.plot(hodl_card_result)
