@@ -33,7 +33,7 @@ def backtest_alpha():
     start_time = time.time()
 
     today = datetime.date.today()
-    begin = datetime.date(2017, 1, 1)
+    begin = datetime.date(2018, 1, 1)
 
     days_to_test = (today - begin).days
     print(days_to_test)
