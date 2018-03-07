@@ -67,7 +67,7 @@ def OFFICIAL_BOA(coins, now):
     import smtplib
     from email.mime.multipart import MIMEMultipart
     from email.mime.text import MIMEText
-    appConfig = config.getConfig()
+    appConfig = config.Config()
     s = smtplib.SMTP_SSL(host='smtp.privateemail.com', port=465)
     s.login("admin@cryptoboa.io", "Aesthetics21!P")
 
