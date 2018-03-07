@@ -1,9 +1,13 @@
-from boa_logic import statistics, crypto_object, scraper, candlesticks, config
 import datetime
 import html
 import pandas
 from datetime import datetime as dt
+import matplotlib
+import os
+matplotlib.use('Agg')
 from matplotlib import pyplot
+from boa_logic import statistics, crypto_object, scraper, candlesticks, config
+
 
 
 def main():
